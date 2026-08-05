@@ -273,6 +273,63 @@ class DailySummarizer:
         toc = "\n\n".join(toc_sections) + "\n\n---\n\n"
         return normalize_language(header + toc + "".join(body_sections), language)
 
+    def generate_bilingual_summary(
+        self,
+        items: List[ContentItem],
+        date: str,
+        total_fetched: int,
+    ) -> str:
+        """Render each English item immediately followed by its Chinese version."""
+        header = (
+            f"# Horizon Bilingual Daily Briefing / 中英双语日报 - {date}\n\n"
+            f"> Selected {len(items)} important items from {total_fetched} fetched "
+            "items. Each English entry is followed by its Chinese version.\n\n"
+            "---\n\n"
+        )
+        if not items:
+            return header + "No important items were selected. / 今日没有筛选出重要资讯。\n"
+
+        sections: List[str] = []
+        view = self.build_view(items, "en")
+        for group in view.groups:
+            english_group = _escape_markdown(self.profile_name(group.profile_id, "en"))
+            chinese_group = _pangu(
+                _escape_markdown(self.profile_name(group.profile_id, "zh"))
+            )
+            sections.append(f"## {english_group} / {chinese_group}\n\n")
+
+            for view_item in group.items:
+                pair_index = view_item.global_index
+                sections.append("**English**\n\n")
+                sections.append(
+                    self._format_item(
+                        view_item.item,
+                        LABELS["en"],
+                        "en",
+                        pair_index,
+                        heading_level=3,
+                        anchor_id=f"bilingual-item-{pair_index}-en",
+                        score_override=view_item.score,
+                        include_separator=False,
+                    )
+                )
+                sections.append("**中文**\n\n")
+                sections.append(
+                    self._format_item(
+                        view_item.item,
+                        LABELS["zh"],
+                        "zh",
+                        pair_index,
+                        heading_level=3,
+                        anchor_id=f"bilingual-item-{pair_index}-zh",
+                        score_override=view_item.score,
+                        include_separator=False,
+                    )
+                )
+                sections.append("---\n\n")
+
+        return header + "".join(sections)
+
     def generate_webhook_overview(
         self,
         items: List[ContentItem],
@@ -356,6 +413,7 @@ class DailySummarizer:
         anchor_id: Optional[str] = None,
         title_override: Optional[str] = None,
         score_override: float | str | None = None,
+        include_separator: bool = True,
     ) -> str:
         """Format a single ContentItem into Markdown."""
         artifact = item.processing.artifacts.get(language) if item.processing else None
@@ -460,8 +518,9 @@ class DailySummarizer:
             lines.append("")
             lines.append(f"**{labels['tags']}**: {tags_str}")
 
-        lines.append("")
-        lines.append("---")
+        if include_separator:
+            lines.append("")
+            lines.append("---")
 
         return "\n".join(lines) + "\n\n"
 

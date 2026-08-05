@@ -46,6 +46,18 @@ class TestOpenAIClientInit:
         assert client.max_tokens == 4096
         assert client.provider == "minimax"
 
+    def test_completion_times_out_with_clear_error(self, monkeypatch):
+        monkeypatch.setenv("MINIMAX_API_KEY", "test-key")
+        client = OpenAIClient(_make_config(request_timeout_sec=0.01))
+
+        async def slow_request(**kwargs):
+            await asyncio.sleep(1)
+
+        monkeypatch.setattr(client, "_do_request", slow_request)
+
+        with pytest.raises(TimeoutError, match="timed out after"):
+            asyncio.run(client.complete("system", "user"))
+
     def test_raises_when_api_key_missing(self, monkeypatch):
         monkeypatch.delenv("MINIMAX_API_KEY", raising=False)
         with pytest.raises(ValueError, match="Missing API key"):

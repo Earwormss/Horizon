@@ -195,6 +195,8 @@ class AIConfig(BaseModel):
     temperature: float = 0.3
     max_tokens: int = 4096
     throttle_sec: float = 0.0
+    request_timeout_sec: float = Field(default=60.0, gt=0, le=600)
+    enrichment_item_timeout_sec: float = Field(default=180.0, gt=0, le=1800)
     analysis_concurrency: int = 1
     enrichment_concurrency: int = 1
     languages: List[str] = Field(default_factory=lambda: ["en"])

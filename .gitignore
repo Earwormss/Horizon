@@ -57,6 +57,8 @@ logs/*.log
 
 # uv
 .uv/
+.tools/
+.cache/
 
 # todo
 todo.txt

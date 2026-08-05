@@ -194,6 +194,20 @@ def test_save_daily_summary_defensively_rejects_path_escape(tmp_path):
     assert not (tmp_path / "outside.md").exists()
 
 
+def test_save_bilingual_summary_combines_both_languages(tmp_path):
+    storage = StorageManager(data_dir=str(tmp_path / "data"))
+
+    output = storage.save_bilingual_summary(
+        "2026-08-05",
+        "# Bilingual\n\nEnglish content\n\n中文内容",
+    )
+
+    assert output.name == "horizon-2026-08-05-bilingual.md"
+    content = output.read_text(encoding="utf-8")
+    assert "中文内容" in content
+    assert "English content" in content
+
+
 def test_safe_output_path_rejects_escape_from_other_output_roots(tmp_path):
     with pytest.raises(ValueError, match="escapes intended root"):
         safe_output_path(tmp_path / "docs" / "_posts", "../../../outside.md")

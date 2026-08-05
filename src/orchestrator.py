@@ -294,11 +294,11 @@ class HorizonOrchestrator:
 
             # 7. Generate and save daily summaries for each configured language
             today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+            summarizer = DailySummarizer(
+                profile_names=self.profiles.names,
+                profile_order=self.config.digest.profile_order,
+            )
             for lang in self.config.ai.languages:
-                summarizer = DailySummarizer(
-                    profile_names=self.profiles.names,
-                    profile_order=self.config.digest.profile_order,
-                )
                 summary = await summarizer.generate_summary(important_items, today, len(all_items), language=lang)
 
                 # Save to data/summaries/
@@ -367,6 +367,23 @@ class HorizonOrchestrator:
                         lang=lang,
                         summarizer=summarizer,
                     )
+
+            # Produce one local item-interleaved bilingual Markdown file.
+            # This is deterministic rendering and does not call AI again.
+            if {"zh", "en"}.issubset(self.config.ai.languages):
+                bilingual_summary = summarizer.generate_bilingual_summary(
+                    important_items,
+                    today,
+                    len(all_items),
+                )
+                bilingual_path = self.storage.save_bilingual_summary(
+                    today,
+                    bilingual_summary,
+                )
+                self.console.print(
+                    f"{self.icons['save']} Saved bilingual summary to: "
+                    f"{bilingual_path}\n"
+                )
 
             self.console.print(
                 f"[bold green]{self.icons['success']} "

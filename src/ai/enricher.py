@@ -3,6 +3,7 @@
 import asyncio
 import json
 import logging
+from contextvars import ContextVar
 from dataclasses import dataclass, field
 from typing import Any, Callable, Optional, TypeVar
 
@@ -126,6 +127,9 @@ class ContentEnricher:
         self.languages = languages
         self.console = console or Console(stderr=True)
         self.tools = tools or ToolRegistry()
+        self._stage_reporter: ContextVar[Optional[Callable[[str], None]]] = (
+            ContextVar("enrichment_stage_reporter", default=None)
+        )
         self._validate_profile_tools()
 
     def _validate_profile_tools(self) -> None:
@@ -143,7 +147,16 @@ class ContentEnricher:
         config = getattr(self.client, "config", None)
         return max(getattr(config, "enrichment_concurrency", 1), 1)
 
-    @retry(stop=stop_after_attempt(3), wait=wait_exponential(min=2, max=10), reraise=True)
+    def _get_item_timeout(self) -> float:
+        config = getattr(self.client, "config", None)
+        return max(getattr(config, "enrichment_item_timeout_sec", 180.0), 1.0)
+
+    def _report_stage(self, stage: str) -> None:
+        reporter = self._stage_reporter.get()
+        if reporter:
+            reporter(stage)
+
+    @retry(stop=stop_after_attempt(2), wait=wait_exponential(min=2, max=10), reraise=True)
     async def _complete(self, **kwargs: Any) -> str:
         return await self.client.complete(**kwargs)
 
@@ -157,7 +170,8 @@ class ContentEnricher:
         validator: Optional[Callable[[ModelT], None]] = None,
     ) -> ModelT:
         validation_error: Optional[Exception] = None
-        for attempt in range(2):
+        schema = json.dumps(model.model_json_schema(), ensure_ascii=False)
+        for attempt in range(3):
             request: dict[str, Any] = {
                 "system": system,
                 "user": user,
@@ -172,25 +186,60 @@ class ContentEnricher:
                 return result
             except (ValidationError, ValueError) as exc:
                 validation_error = exc
-                user += (
-                    "\n\nYour previous response did not satisfy the output contract. "
-                    f"Validation error: {exc}. Return only a corrected JSON object."
-                )
+                if attempt < 2:
+                    invalid_excerpt = response[:4000]
+                    user += (
+                        "\n\nYour previous response did not satisfy the output contract. "
+                        f"Validation error: {exc}.\n"
+                        f"Required JSON Schema: {schema}\n"
+                        f"Invalid response excerpt: {invalid_excerpt}\n"
+                        "Repair the response. Return only the corrected JSON object, "
+                        "with no Markdown fences or commentary."
+                    )
         raise ValueError(error_message) from validation_error
 
     async def enrich_batch(self, items: list[ContentItem]) -> EnrichmentBatchResult:
         semaphore = asyncio.Semaphore(self._get_concurrency())
+        active_stages: dict[str, str] = {}
+
+        def refresh_description(task_id: TaskID) -> None:
+            active = list(active_stages.values())[: self._get_concurrency()]
+            description = "Enriching"
+            if active:
+                description += " | " + " | ".join(active)
+            progress.update(task_id, description=description)
 
         async def process(
             item: ContentItem, task_id: TaskID
         ) -> tuple[str, Optional[Exception]]:
             async with semaphore:
+                title = " ".join(item.title.split())[:24] or item.id[:24]
+
+                def report(stage: str) -> None:
+                    active_stages[item.id] = f"{title}: {stage}"
+                    refresh_description(task_id)
+
+                token = self._stage_reporter.set(report)
                 try:
-                    await self._enrich_item(item)
+                    report("starting")
+                    await asyncio.wait_for(
+                        self._enrich_item(item),
+                        timeout=self._get_item_timeout(),
+                    )
+                except asyncio.TimeoutError:
+                    exc = TimeoutError(
+                        "Enrichment item timed out after "
+                        f"{self._get_item_timeout():g} seconds"
+                    )
+                    logger.error("Error enriching item %s: %s", item.id, exc)
+                    return item.id, exc
                 except Exception as exc:
                     logger.error("Error enriching item %s: %s", item.id, exc)
                     return item.id, exc
                 finally:
+                    self._stage_reporter.reset(token)
+                    active_stages.pop(item.id, None)
+                    refresh_description(task_id)
                     progress.advance(task_id)
             return item.id, None
 
@@ -220,11 +269,13 @@ class ContentEnricher:
         profile = self.profiles.get(item.processing.classification.profile)
         for language in self.languages:
             item.processing.artifacts.pop(language, None)
+        self._report_stage("tools")
         tool_results = await self._plan_and_execute_tools(item, profile)
         sources = self._sources_from_tool_results(tool_results)
 
         artifacts = {}
         for language in self.languages:
+            self._report_stage(language.upper())
             generated = await self._generate_artifact(
                 item, profile, language, tool_results
             )
@@ -246,6 +297,7 @@ class ContentEnricher:
                 sources=[source for source in sources.values() if source.id in referenced],
             )
         item.processing.artifacts.update(artifacts)
+        self._report_stage("done")
 
     @staticmethod
     def _expand_request_source_refs(

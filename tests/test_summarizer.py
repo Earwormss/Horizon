@@ -185,6 +185,29 @@ def test_generate_summary_groups_items_by_profile_with_heading_hierarchy():
     assert "### [Important Item 2]" in result
 
 
+def test_generate_bilingual_summary_interleaves_each_item_by_language():
+    first = _make_item(1)
+    second = _make_item(2)
+    first.processing.artifacts["en"].title = "English One"
+    first.processing.artifacts["zh"].title = "中文一"
+    second.processing.artifacts["en"].title = "English Two"
+    second.processing.artifacts["zh"].title = "中文二"
+
+    result = DailySummarizer().generate_bilingual_summary(
+        [first, second],
+        date="2026-08-05",
+        total_fetched=10,
+    )
+
+    english_one = result.index("English One")
+    chinese_one = result.index("中文一")
+    english_two = result.index("English Two")
+    chinese_two = result.index("中文二")
+    assert english_one < chinese_one < english_two < chinese_two
+    assert result.count("**English**") == 2
+    assert result.count("**中文**") == 2
+
+
 def test_generate_summary_uses_configured_profile_order():
     finance = _make_item(1)
     finance.profile = "finance-news"

@@ -129,6 +129,19 @@ class StorageManager:
 
         return filepath
 
+    def save_bilingual_summary(
+        self,
+        date: str,
+        markdown: str,
+    ) -> Path:
+        """Save an already-rendered item-interleaved bilingual Markdown file."""
+        filepath = safe_output_path(
+            self.summaries_dir,
+            f"horizon-{date}-bilingual.md",
+        )
+        _atomic_write_text(filepath, markdown)
+        return filepath
+
     def load_subscribers(self) -> list:
         """Loads the list of email subscribers."""
         subscribers_path = self.data_dir / "subscribers.json"

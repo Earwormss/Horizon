@@ -526,3 +526,27 @@ def test_enrichment_batch_reports_failure_without_discarding_successes():
     assert result.succeeded_ids == [successful_item.id]
     assert result.failed_ids == [failed_item.id]
     assert result.failures[failed_item.id] == "RuntimeError: AI unavailable"
+
+
+def test_enrichment_batch_times_out_one_stalled_item():
+    async def complete(**kwargs):
+        return "{}"
+
+    item = make_item()
+    client = SimpleNamespace(
+        complete=complete,
+        config=SimpleNamespace(
+            enrichment_concurrency=1,
+            enrichment_item_timeout_sec=0.01,
+        ),
+    )
+    enricher = ContentEnricher(client, PROFILES, ["zh"], tools=FakeTools())
+
+    async def stalled_enrich_item(input_item):  # type: ignore[no-untyped-def]
+        await asyncio.sleep(1)
+
+    enricher._enrich_item = stalled_enrich_item  # type: ignore[method-assign]
+    result = asyncio.run(enricher.enrich_batch([item]))
+
+    assert result.status == "failure"
+    assert "timed out after" in result.failures[item.id]

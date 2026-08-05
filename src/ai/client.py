@@ -1,5 +1,6 @@
 """AI client abstraction supporting multiple providers."""
 
+import asyncio
 import os
 import re
 from abc import ABC, abstractmethod
@@ -16,6 +17,18 @@ from ..models import AIConfig, AIProvider, AI_PROVIDER_DEFAULTS
 from .tokens import record_usage
 
 logger = logging.getLogger(__name__)
+
+
+async def _await_ai_request(config: AIConfig, request):
+    """Bound one provider request so a stalled API cannot block the pipeline."""
+    timeout = config.request_timeout_sec
+    try:
+        return await asyncio.wait_for(request, timeout=timeout)
+    except asyncio.TimeoutError as exc:
+        raise TimeoutError(
+            f"AI request timed out after {timeout:g} seconds "
+            f"({config.provider.value}/{config.model})"
+        ) from exc
 
 
 _ENV_VAR_RE = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*$")
@@ -157,12 +170,15 @@ class AnthropicClient(AIClient):
         temperature = self.temperature if temperature is None else temperature
         max_tokens = self.max_tokens if max_tokens is None else max_tokens
 
-        message = await self.client.messages.create(
-            model=self.model,
-            max_tokens=max_tokens,
-            temperature=temperature,
-            system=system,
-            messages=[{"role": "user", "content": user}]
+        message = await _await_ai_request(
+            self.config,
+            self.client.messages.create(
+                model=self.model,
+                max_tokens=max_tokens,
+                temperature=temperature,
+                system=system,
+                messages=[{"role": "user", "content": user}],
+            ),
         )
         usage = getattr(message, "usage", None)
         if usage is not None:
@@ -265,34 +281,43 @@ class OpenAIClient(AIClient):
             temperature = 0.01
 
         try:
-            response = await self._do_request(
-                system=system,
-                user=user,
-                temperature=temperature,
-                max_tokens=max_tokens,
-                include_temperature=self._supports_temperature,
-                use_max_completion_tokens=self._use_max_completion_tokens,
-            )
-        except Exception as exc:
-            if self._supports_temperature and self._is_temperature_unsupported(str(exc)):
-                self._supports_temperature = False
-                response = await self._do_request(
-                    system=system,
-                    user=user,
-                    temperature=temperature,
-                    max_tokens=max_tokens,
-                    include_temperature=False,
-                    use_max_completion_tokens=self._use_max_completion_tokens,
-                )
-            elif not self._use_max_completion_tokens and self._is_max_tokens_unsupported(str(exc)):
-                self._use_max_completion_tokens = True
-                response = await self._do_request(
+            response = await _await_ai_request(
+                self.config,
+                self._do_request(
                     system=system,
                     user=user,
                     temperature=temperature,
                     max_tokens=max_tokens,
                     include_temperature=self._supports_temperature,
-                    use_max_completion_tokens=True,
+                    use_max_completion_tokens=self._use_max_completion_tokens,
+                ),
+            )
+        except Exception as exc:
+            if self._supports_temperature and self._is_temperature_unsupported(str(exc)):
+                self._supports_temperature = False
+                response = await _await_ai_request(
+                    self.config,
+                    self._do_request(
+                        system=system,
+                        user=user,
+                        temperature=temperature,
+                        max_tokens=max_tokens,
+                        include_temperature=False,
+                        use_max_completion_tokens=self._use_max_completion_tokens,
+                    ),
+                )
+            elif not self._use_max_completion_tokens and self._is_max_tokens_unsupported(str(exc)):
+                self._use_max_completion_tokens = True
+                response = await _await_ai_request(
+                    self.config,
+                    self._do_request(
+                        system=system,
+                        user=user,
+                        temperature=temperature,
+                        max_tokens=max_tokens,
+                        include_temperature=self._supports_temperature,
+                        use_max_completion_tokens=True,
+                    ),
                 )
             else:
                 raise
@@ -410,12 +435,15 @@ class AzureOpenAIClient(AIClient):
         max_tokens = self.max_tokens if max_tokens is None else max_tokens
 
         try:
-            response = await self._create_completion(
-                system=system,
-                user=user,
-                temperature=temperature,
-                max_tokens=max_tokens,
-                use_max_completion_tokens=self._use_max_completion_tokens,
+            response = await _await_ai_request(
+                self.config,
+                self._create_completion(
+                    system=system,
+                    user=user,
+                    temperature=temperature,
+                    max_tokens=max_tokens,
+                    use_max_completion_tokens=self._use_max_completion_tokens,
+                ),
             )
         except Exception as exc:
             fallback = self._token_fallback_mode(str(exc))
@@ -423,12 +451,15 @@ class AzureOpenAIClient(AIClient):
                 raise
 
             self._use_max_completion_tokens = fallback
-            response = await self._create_completion(
-                system=system,
-                user=user,
-                temperature=temperature,
-                max_tokens=max_tokens,
-                use_max_completion_tokens=fallback,
+            response = await _await_ai_request(
+                self.config,
+                self._create_completion(
+                    system=system,
+                    user=user,
+                    temperature=temperature,
+                    max_tokens=max_tokens,
+                    use_max_completion_tokens=fallback,
+                ),
             )
 
         usage = getattr(response, "usage", None)
@@ -514,15 +545,18 @@ class GeminiClient(AIClient):
         temperature = self.temperature if temperature is None else temperature
         max_tokens = self.max_tokens if max_tokens is None else max_tokens
 
-        response = await self.client.aio.models.generate_content(
-            model=self.model,
-            contents=user,
-            config=types.GenerateContentConfig(
-                system_instruction=system,
-                temperature=temperature,
-                max_output_tokens=max_tokens,
-                response_mime_type="application/json"
-            )
+        response = await _await_ai_request(
+            self.config,
+            self.client.aio.models.generate_content(
+                model=self.model,
+                contents=user,
+                config=types.GenerateContentConfig(
+                    system_instruction=system,
+                    temperature=temperature,
+                    max_output_tokens=max_tokens,
+                    response_mime_type="application/json",
+                ),
+            ),
         )
         usage = getattr(response, "usage_metadata", None)
         if usage is not None:
@@ -658,6 +692,8 @@ def _create_chained_client(config: AIConfig) -> ChainedAIClient:
             temperature=config.temperature,
             max_tokens=config.max_tokens,
             throttle_sec=config.throttle_sec,
+            request_timeout_sec=config.request_timeout_sec,
+            enrichment_item_timeout_sec=config.enrichment_item_timeout_sec,
             analysis_concurrency=config.analysis_concurrency,
             enrichment_concurrency=config.enrichment_concurrency,
             languages=config.languages,
