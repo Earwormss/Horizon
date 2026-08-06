@@ -40,6 +40,9 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          # Authenticate the GitHub scraper to avoid the 60 requests/hour
+          # unauthenticated API limit on shared Actions runner IPs.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LWN_KEY: ${{ secrets.LWN_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: uv run horizon --hours 24
