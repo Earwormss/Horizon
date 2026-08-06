@@ -385,6 +385,42 @@ class HorizonOrchestrator:
                     f"{bilingual_path}\n"
                 )
 
+                # Publish the item-interleaved bilingual report to GitHub Pages.
+                try:
+                    posts_dir = Path("docs/_posts")
+                    posts_dir.mkdir(parents=True, exist_ok=True)
+                    dest_path = safe_output_path(
+                        posts_dir,
+                        f"{today}-summary-bilingual.md",
+                    )
+                    front_matter = (
+                        "---\n"
+                        "layout: default\n"
+                        f'title: "Horizon Summary: {today} (EN / ZH)"\n'
+                        f"date: {today}\n"
+                        "lang: en\n"
+                        "---\n\n"
+                    )
+                    bilingual_content = bilingual_summary
+                    first_line = bilingual_content.strip().split("\n")[0]
+                    if first_line.startswith("# "):
+                        parts = bilingual_content.split("\n", 1)
+                        if len(parts) > 1:
+                            bilingual_content = parts[1].strip()
+
+                    with open(dest_path, "w", encoding="utf-8") as f:
+                        f.write(front_matter + bilingual_content)
+
+                    self.console.print(
+                        f"{self.icons['document']} Copied bilingual summary "
+                        f"to GitHub Pages: {dest_path}\n"
+                    )
+                except Exception as e:
+                    self.console.print(
+                        f"[yellow]{self.icons['warning']} Failed to copy "
+                        f"bilingual summary to docs/: {e}[/yellow]\n"
+                    )
+
             self.console.print(
                 f"[bold green]{self.icons['success']} "
                 "Horizon completed successfully![/bold green]"
