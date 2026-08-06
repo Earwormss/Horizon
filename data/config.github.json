@@ -1,18 +1,20 @@
 {
   "ai": {
     "provider": "deepseek",
-    "model": "deepseek-v4-flash",
+    "model": "deepseek-chat",
     "base_url": "https://api.deepseek.com",
     "api_key_env": "DEEPSEEK_API_KEY",
     "temperature": 0.3,
-    "max_tokens": 8192,
-    "throttle_sec": 1,
+    "max_tokens": 4096,
+    "throttle_sec": 0,
+    "request_timeout_sec": 60,
+    "enrichment_item_timeout_sec": 180,
     "languages": [
       "zh",
       "en"
     ],
-    "analysis_concurrency": 5,
-    "enrichment_concurrency": 5
+    "analysis_concurrency": 1,
+    "enrichment_concurrency": 2
   },
   "processing": {
     "profiles_dir": "profiles",
