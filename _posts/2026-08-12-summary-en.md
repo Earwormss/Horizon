@@ -5,418 +5,379 @@ date: 2026-08-12
 lang: en
 ---
 
-> From 48 items, 25 important content pieces were selected
+> From 45 items, 21 important content pieces were selected
 
 ---
 
 **Technology News**
-1. [DeepSeek V4 Pro 0813: Competitive Benchmarks, Aggressive Pricing](#item-tech-news-1) ⭐️ 8.0/10
-2. [Tailscale Traces Database Corruption to 16-Year-Old SQLite WAL-Reset Bug](#item-tech-news-2) ⭐️ 8.0/10
-3. [Qwen3.8-2.4T-A95B: Massive MoE Model Released](#item-tech-news-3) ⭐️ 8.0/10
-4. [Gowers on LLM Math Strengths: Sampling and Test-Time Scaling](#item-tech-news-4) ⭐️ 8.0/10
-5. [Woxi: Open-Source Wolfram Language Interpreter in Rust](#item-tech-news-5) ⭐️ 8.0/10
-6. [Researchers Steal Hidden Reasoning Traces from LLM APIs](#item-tech-news-6) ⭐️ 8.0/10
-7. [Adam&\#x27;s Basis Dependence Breaks Implicit Low-Rank Bias](#item-tech-news-7) ⭐️ 8.0/10
-8. [LTX-2.5: Open-Source Video Model Runs on RTX 5090](#item-tech-news-8) ⭐️ 8.0/10
-9. [xAI Releases Grok 4.6 for Long-Running Agentic Tasks](#item-tech-news-9) ⭐️ 8.0/10
-10. [Live Webcam Aggregation for 2026 Solar Eclipse](#item-tech-news-10) ⭐️ 7.0/10
+1. [Qwen3.8-2.4T-A95B: Massive Open-Weight MoE Model Released](#item-tech-news-1) ⭐️ 9.0/10
+2. [DeepSeek V4 Pro 0813 Released with Responses API Support](#item-tech-news-2) ⭐️ 8.0/10
+3. [Tailscale Traces Database Corruption to 16-Year-Old SQLite WAL-Reset Bug](#item-tech-news-3) ⭐️ 8.0/10
+4. [xAI Releases Grok 4.6, Sparking Debate on System Prompts and Benchmarks](#item-tech-news-4) ⭐️ 8.0/10
+5. [Adam&\#x27;s Basis Dependence Breaks Implicit Low-Rank Bias](#item-tech-news-5) ⭐️ 8.0/10
+6. [LTX-2.5 Open-Source Video Model Runs on RTX 5090](#item-tech-news-6) ⭐️ 8.0/10
+7. [Zed Introduces Delta: Multi-Agent AI Coding Framework](#item-tech-news-7) ⭐️ 7.0/10
+8. [Why Tiny JPEGs Look Different in Chrome](#item-tech-news-8) ⭐️ 7.0/10
+9. [uBlock Origin Stops Filtering Facebook Ads](#item-tech-news-9) ⭐️ 7.0/10
+10. [AI&\#x27;s Impact on Software Engineering Roles](#item-tech-news-10) ⭐️ 7.0/10
 11. [License Plate Reader Searches Should Require a Warrant](#item-tech-news-11) ⭐️ 7.0/10
-12. [AI&\#x27;s Squeeze on Mid-Level Software Engineers](#item-tech-news-12) ⭐️ 7.0/10
-13. [No Lossless AI Text Rewrites: Engineers Must Own Every Sentence](#item-tech-news-13) ⭐️ 7.0/10
+12. [AI Coding Erodes System Understanding](#item-tech-news-12) ⭐️ 7.0/10
+13. [No Lossless AI Rewrites: Engineers Must Own Every Sentence](#item-tech-news-13) ⭐️ 7.0/10
 14. [Honest CS Conference Ranking by Destination Quality](#item-tech-news-14) ⭐️ 7.0/10
-15. [Decoupled Descent: Exact Train-Test Error Tracking via AMP](#item-tech-news-15) ⭐️ 7.0/10
-16. [Enterprise SSDs Hit 48% of NAND Shipments; YMTC Enters Top Three](#item-tech-news-16) ⭐️ 7.0/10
-17. [WeChat Releases Resource-Efficient WeLM LLM Family](#item-tech-news-17) ⭐️ 7.0/10
+15. [WeChat Releases WeLM, a Resource-Efficient LLM Family](#item-tech-news-15) ⭐️ 7.0/10
 
 **Technology Blog**
-1. [Day 0 Support for Qwen3.8-2.4T-A95B on vLLM](#item-tech-blog-1) ⭐️ 5.0/10
+1. [Day 0 vLLM Support for Qwen3.8-2.4T-A95B](#item-tech-blog-1) ⭐️ 5.0/10
 
 **Financial News**
 1. [CME to Launch First AI Compute Futures Contracts](#item-finance-news-1) ⭐️ 8.0/10
 2. [Former Chinese Premier Zhu Rongji Dies at 98](#item-finance-news-2) ⭐️ 8.0/10
-3. [Tencent Q2 Revenue Beats Expectations, Capex Surge Turns Free Cash Flow Negative](#item-finance-news-3) ⭐️ 8.0/10
-4. [Premarket Stock Movers: AI Names Surge on Strong Earnings and Guidance](#item-finance-news-4) ⭐️ 7.0/10
-5. [EVs Dominate China&\#x27;s Car Market: 5 Takeaways from Latest Auto Sales Data](#item-finance-news-5) ⭐️ 7.0/10
-6. [Nvidia&\#x27;s $500 Billion AI Financing Plan Faces China Risk](#item-finance-news-6) ⭐️ 7.0/10
-7. [Election Betting Bans and Prediction Markets: A State-by-State Legal Patchwork](#item-finance-news-7) ⭐️ 7.0/10
+3. [Tencent Q2 Revenue Beats, Free Cash Flow Turns Negative on AI Spending](#item-finance-news-3) ⭐️ 8.0/10
+4. [Premarket Movers: AI Stocks Surge on Strong Earnings, Software Slips](#item-finance-news-4) ⭐️ 7.0/10
+5. [EVs Dominate China&\#x27;s Car Market: Key Takeaways from Latest Sales Data](#item-finance-news-5) ⭐️ 7.0/10
 
 ---
 
 ## Technology News
 
 <a id="item-tech-news-1"></a>
-### [DeepSeek V4 Pro 0813: Competitive Benchmarks, Aggressive Pricing](https://openrouter.ai/deepseek/deepseek-v4-pro-0813) ⭐️ 8.0/10
+### [Qwen3.8-2.4T-A95B: Massive Open-Weight MoE Model Released](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B) ⭐️ 9.0/10
 
-DeepSeek V4 Pro 0813 is a newly released AI model available on OpenRouter, positioned as a competitive alternative to leading models like Opus 4.8, GLM-5.2, and Kimi-K3. Community benchmarks show it achieving a score of 42.7 without tools and 60.0 with tools on the HLE benchmark, while the V4 Flash 0731 variant scores 37.8 and 51.0 respectively. The model is noted for being roughly 20x cheaper than Opus 4.8, though it is considered weaker than some rivals like Sol or Fable. DeepSeek has also announced pricing increases starting today, and the V4 Flash 0731 is praised as one of the most outstanding models of recent months.
+Qwen has released Qwen3.8-2.4T-A95B, a massive mixture-of-experts \(MoE\) model with 2.4 trillion total parameters and 95 billion active parameters. The model card claims performance between Opus 4.8 and Fable 5, positioning it as a rival to Kimi k3 and DeepSeek V4-Pro. It supports a native context length of 262,144 tokens, extendable to 1,010,000 tokens. Initial releases include BF16 and FP8 formats, with a 1-bit quantized version available at 397GB, while the full BF16 model is 4.9TB. The open-weight version lacks vision input, non-thinking support, and the 1M default context length found in the official Qwen3.8-Max.
 
-hackernews · explosion-s · Aug 12, 16:04 · [Discussion](https://news.ycombinator.com/item?id=49274600)
+hackernews · Philpax · Aug 12, 15:01 · [Discussion](https://news.ycombinator.com/item?id=49273478)
 
-**「Background」** DeepSeek is a Chinese AI company known for releasing open-source models under the MIT License, starting with DeepSeek Coder in November 2023. In April 2026, DeepSeek released a preview of its V4 model series, which introduced a cost-effective 1M token context length. The V4 Pro 0813 is a large-scale mixture-of-experts model with 1.6 trillion total parameters and 49 billion active parameters, priced at $0.435 per million input tokens and $0.87 per million output tokens, with a 1,048,576 token context window and a maximum output of 384,000 tokens.
+**「Background」** Qwen3.8-2.4T-A95B is an open-weight sparse mixture-of-experts \(MoE\) model released by Alibaba&\#x27;s Qwen team, serving as the open-weight variant of Qwen3.8-Max. It has 2.4 trillion total parameters with 95 billion activated per token, using a fine-grained MoE architecture that combines full and linear attention. The model supports a native context length of 262,144 tokens, extendable to 1,010,000 tokens, and is designed for coding, research, complex reasoning, and agentic workflows. This release is part of a broader trend of large open-weight models, following similar releases like DeepSeek V4-Pro, and aims to bring near-frontier capabilities to the open ecosystem.
 
-**「Impact」** For AI practitioners and developers, DeepSeek V4 Pro 0813 offers a cost-effective option for tasks that do not require top-tier intelligence, potentially reducing operational costs significantly compared to premium models like Opus 4.8.
+**「Impact」** The 1-bit quantized version at 397GB makes frontier-level performance accessible to individuals with high-end consumer hardware, potentially democratizing access to top-tier AI models. However, the lack of QAT on q4 means that serving the model at launch will be harder than Kimi k3, and the license restricts commercial use for companies with revenue over $50M per year.
 
-**「Community Discussion」** Community members are actively comparing DeepSeek V4 Pro 0813 against other models, with some noting that while it is competitive with Opus 4.8, it is weaker than Sol or Fable. There is also concern about DeepSeek&\#x27;s pricing increases, with one user stating they are &\#x27;burning money quickly&\#x27; on the official API, while another highlights the V4 Flash 0731 as the most outstanding model of recent months.
+**「Community Discussion」** Community members note the model&\#x27;s size and quantization challenges, with some highlighting that the 1-bit quant at 397GB is astonishing for its performance level. Others express disappointment that the open-weight version lacks vision support and the 1M context length of the official Max version, and there is discussion about the competitive landscape with DeepSeek V4-Pro and Kimi k3.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/DeepSeek">DeepSeek - Wikipedia</a></li>
-<li><a href="https://openrouter.ai/deepseek/deepseek-v4-pro-0813">DeepSeek V 4 Pro 0813 - API Pricing &amp; Providers | OpenRouter</a></li>
-<li><a href="https://api-docs.deepseek.com/news/news260424/">DeepSeek V 4 Preview Release | DeepSeek API Docs</a></li>
+<li><a href="https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/">Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable ...</a></li>
+<li><a href="https://openrouter.ai/qwen/qwen3.8-2.4t-a95b">Qwen3.8 2.4T A95B - API Pricing &amp; Providers | OpenRouter</a></li>
+<li><a href="https://unsloth.ai/docs/models/qwen3.8">Qwen3.8 - How to Run Locally | Unsloth Documentation</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#machine-learning`, `#model-release`, `#benchmarks`, `#pricing`
+**Tags**: `#AI`, `#Machine Learning`, `#Large Language Models`, `#Qwen`, `#Open Source`
 
 ---
 
 <a id="item-tech-news-2"></a>
-### [Tailscale Traces Database Corruption to 16-Year-Old SQLite WAL-Reset Bug](https://tailscale.com/blog/sqlite-wal-reset-bug) ⭐️ 8.0/10
+### [DeepSeek V4 Pro 0813 Released with Responses API Support](https://openrouter.ai/deepseek/deepseek-v4-pro-0813) ⭐️ 8.0/10
 
-Tailscale has documented a 16-year-old SQLite WAL-reset race condition that corrupted databases in their control plane, despite a single-writer design that is the intended use of SQLite. The bug, which could only occur under specific concurrency conditions, was isolated with the help of an open-source SQLite VFS shim that Tailscale funded. The company paid SQLite developers to fix the bug, and the tooling will aid in tracking down similar issues in the future. The debugging journey is detailed in a blog post, highlighting the subtlety of the race and the value of investing in open-source debugging tools.
+DeepSeek V4 Pro 0813 has been released, now supporting the Responses API format, as announced via official channels. The model is available on OpenRouter, though the listing there lacks detailed information. Community testing on Codex CLI shows DeepSeek V4 Pro 0813 completed a feature development task in 12 minutes 2 seconds at a cost of $0.12 but produced a bug, while Grok 4.6 finished in 3 minutes 18 seconds at $1.41 without bugs. The release has generated significant discussion, with 692 points and 244 comments on Hacker News, focusing on performance, cost-effectiveness, and comparisons with other models like Grok 4.6.
 
-hackernews · ropbear · Aug 12, 14:22 · [Discussion](https://news.ycombinator.com/item?id=49272832)
+hackernews · explosion-s · Aug 12, 16:04 · [Discussion](https://news.ycombinator.com/item?id=49274600)
 
-**「Background」** SQLite is a widely used embedded database that relies on a write-ahead log \(WAL\) to ensure durability and concurrency. In WAL mode, changes are first appended to a separate WAL file before being checkpointed into the main database file. The bug, named the &\#x27;WAL-Reset bug&\#x27; by SQLite developers, is a race condition that can occur when the WAL file is reset \(e.g., after a checkpoint\) while another process or thread is reading it, leading to lost writes and corrupted indexes. This bug has been present in SQLite for at least 16 years, dating back to at least version 3.7.0 \(released in 2010\), and was discovered by Tailscale after experiencing database corruption incidents.
+**「Background」** DeepSeek V4 Pro 0813 is the GA release of DeepSeek&\#x27;s large-scale mixture-of-experts model, succeeding earlier preview versions. It is a proprietary model with a 1,048,576-token context window and a maximum output of 384,000 tokens, priced at $0.435 per million input tokens and $0.87 per million output tokens on OpenRouter. The version number 0813 reflects the August 13, 2026 release date, and the update adds support for the Responses API format.
 
-**「Impact」** Tailscale users experienced outages due to database corruption, but the fix prevents future occurrences and provides a reusable tool for the broader SQLite community to diagnose similar concurrency bugs.
+**「Impact」** Developers seeking low-cost AI coding assistance may benefit from DeepSeek V4 Pro 0813&\#x27;s dramatically lower cost per task, though they must weigh the higher likelihood of bugs compared to more expensive alternatives like Grok 4.6.
 
-**「Community Discussion」** Commenters praised Tailscale for funding the open-source fix, with some noting the rarity of corporations paying for open-source maintenance. Others appreciated the technical depth, though one commenter pointed out a minor wording issue in the post.
+**「Community Discussion」** Community members are impressed by DeepSeek&\#x27;s cost-effectiveness, with one user noting the previous Flash update handled heavy development &\#x27;for peanuts&\#x27; and expressing eagerness to try the new model. However, a direct comparison on Codex CLI revealed a trade-off: DeepSeek V4 Pro 0813 was much cheaper but produced a bug, while Grok 4.6 was faster and bug-free but cost over ten times more. Some users also criticized the OpenRouter link for lacking useful information, suggesting official API docs or benchmark posts instead.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://tailscale.com/blog/sqlite-wal-reset-bug">How Tailscale helped find the SQLite WAL - Reset bug</a></li>
-<li><a href="https://dzen.ru/b/anyfp4r4NVwmOoA8">16-летний баг SQLite вызвал 19 повреждений у Tailscale ... | Дзен</a></li>
+<li><a href="https://openrouter.ai/deepseek/deepseek-v4-pro-0813">DeepSeek V4 Pro 0813 - API Pricing &amp; Benchmarks | OpenRouter</a></li>
+<li><a href="https://benchlm.ai/models/deepseek-v4-pro">DeepSeek V4 Pro Benchmarks &amp; Pricing (August 2026)</a></li>
+<li><a href="https://benchable.ai/models/deepseek/deepseek-v4-pro-20260813">DeepSeek: DeepSeek V4 Pro 0813 - AI Model Details &amp; Bench...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#SQLite`, `#database`, `#bug`, `#concurrency`, `#open-source`
+**Tags**: `#AI`, `#DeepSeek`, `#model release`, `#cost-effectiveness`, `#benchmarks`
 
 ---
 
 <a id="item-tech-news-3"></a>
-### [Qwen3.8-2.4T-A95B: Massive MoE Model Released](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B) ⭐️ 8.0/10
+### [Tailscale Traces Database Corruption to 16-Year-Old SQLite WAL-Reset Bug](https://tailscale.com/blog/sqlite-wal-reset-bug) ⭐️ 8.0/10
 
-Qwen has released Qwen3.8-2.4T-A95B, a large Mixture-of-Experts \(MoE\) model with 2.4 trillion total parameters and 95 billion active parameters. The model supports a native context length of 262,144 tokens, extendable to 1,010,000 tokens. Initial releases include BF16 and FP8 formats, with no QAT-quantized version, making deployment challenging; the BF16 model is approximately 4.9TB, while a 1-bit quantized version is around 397GB. The model card claims performance between Opus 4.8 and Fable 5, positioning it as a rival to Kimi k3, though it lacks vision input and non-thinking support compared to the official Qwen3.8-Max.
+Tailscale&\#x27;s engineering team has published a post-mortem tracing a database corruption issue to a 16-year-old SQLite WAL-reset bug. The bug, which can occur when multiple connections use the same database in WAL mode, was isolated with the help of an open-source SQLite VFS shim that Tailscale funded. The fix has been implemented, and Tailscale continues to support SQLite through a support contract. The incident highlights the value of funding open-source debugging tools and the importance of thorough testing, even for mature software like SQLite.
 
-hackernews · Philpax · Aug 12, 15:01 · [Discussion](https://news.ycombinator.com/item?id=49273478)
+hackernews · ropbear · Aug 12, 14:22 · [Discussion](https://news.ycombinator.com/item?id=49272832)
 
-**「Background」** Qwen3.8-2.4T-A95B is a Mixture-of-Experts \(MoE\) large language model released by Alibaba&\#x27;s Qwen team, with 2.4 trillion total parameters and 95 billion active parameters per token. It supports a native context length of 262,144 tokens, extendable to 1,010,000 tokens. The model is positioned as a rival to Kimi k3 and is claimed to perform between Opus 4.8 and Fable 5 on benchmarks. Initial releases include BF16 and FP8 formats, with no quantized versions provided at launch.
+**「Background」** SQLite is a widely used embedded database that supports Write-Ahead Logging \(WAL\) mode, which improves concurrency by allowing readers and writers to operate simultaneously. In WAL mode, a write transaction appends changes to a separate WAL file, and a checkpoint operation periodically merges those changes back into the main database file. The bug in question, a WAL-reset race condition, can occur when a write transaction overlaps with a WAL reset \(a step in the checkpoint process\) while multiple database connections are open on the same file. This race condition can lead to database corruption, and it remained undetected for 16 years despite SQLite&\#x27;s extensive testing.
 
-**「Impact」** For practitioners, the release of Qwen3.8-2.4T-A95B with only BF16 and FP8 weights means that serving it at launch is harder than Kimi K3, and the lack of QAT on q4 forces well-resourced parties to quantize it, potentially bringing it to ~1.3TB, similar to K3&\#x27;s size. The 1-bit quantized version at 397GB with 95B active parameters reportedly brings Opus 4.5-level performance to consumer hardware, while the full BF16 model requires ~4.9TB, making deployment feasible only for those with substantial memory. The open-weight model lacks vision input, non-thinking support, and the 1M context length of the official Qwen3.8-Max, which may limit its appeal for some use cases.
+**「Impact」** Users and developers relying on SQLite in WAL mode with multiple connections may be affected by this bug, which can lead to database corruption. The open-source VFS shim funded by Tailscale provides a tool for detecting similar race conditions in the future, benefiting the broader SQLite community.
 
-**「Community Discussion」** Community members note that Qwen3.8-2.4T-A95B is a direct competitor to Kimi k3, but its large size and lack of QAT quantization make it harder to serve initially; some suggest that a well-funded entity will need to perform quantization. Others highlight that the 1-bit quantized version \(397GB\) could bring Opus 4.5-level performance to consumer hardware, while some express disappointment that the open-weight model lacks vision support and the full 1M context length, calling the capability loss intentional.
+**「Community Discussion」** Commenters praised the article for its clarity and the company&\#x27;s decision to fund open-source tooling, with some noting that the bug&\#x27;s existence despite SQLite&\#x27;s extensive test suite illustrates the limits of testing. Others appreciated the detailed explanation of the race condition and the single-writer design context.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B">Qwen/ Qwen 3 . 8 - 2 . 4 T - A 95 B · Hugging Face</a></li>
-<li><a href="https://www.edenai.co/post/kimi-k3-vs-qwen-3-8-max-benchmarks-pricing-api-access">Kimi K3 vs Qwen 3 . 8 -Max: Benchmarks , Pricing &amp; API Access</a></li>
-<li><a href="https://autollab.ru/blog/claude-fable-5-vs-opus-4-8-vs-sonnet-4-6">Claude Fable 5 vs Opus 4.8 vs Sonnet 4.6: какую брать... — autollab</a></li>
-<li><a href="https://habr.com/ru/articles/1068706/">Qwen 3 . 8 Max вышла: выше Claude Fable 5 в агентном... / Хабр</a></li>
+<li><a href="https://tailscale.com/blog/sqlite-wal-reset-bug">How Tailscale helped find the SQLite WAL-Reset bug</a></li>
+<li><a href="https://www.theregister.com/databases/2026/08/12/tailscale-says-deeply-buried-16-year-old-sqlite-bug-caused-last-years-outages/5287004">Tailscale says deeply buried 16-year-old SQLite bug caused last year&#x27;s outages</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#LLM`, `#Qwen`, `#MoE`, `#Model Release`
+**Tags**: `#SQLite`, `#database`, `#bug`, `#Tailscale`, `#open-source`
 
 ---
 
 <a id="item-tech-news-4"></a>
-### [Gowers on LLM Math Strengths: Sampling and Test-Time Scaling](https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/) ⭐️ 8.0/10
+### [xAI Releases Grok 4.6, Sparking Debate on System Prompts and Benchmarks](https://x.ai/news/grok-4-6) ⭐️ 8.0/10
 
-In a recent blog post, Fields Medalist Timothy Gowers analyzes the mathematical capabilities of large language models \(LLMs\), focusing on their strengths in sampling and test-time scaling. He suggests that LLMs are particularly effective at generating many candidate solutions and filtering them, a method that has shown surprising results in mathematics and programming. The post also touches on the potential for LLMs to discover new and elegant proofs, though Gowers notes that recognizing such proofs may be challenging. The discussion highlights that while LLMs excel at certain tasks, their role in proving theorems and finding counterexamples remains an active area of exploration.
+xAI has released Grok 4.6, a new frontier AI model, according to an announcement on x.ai. The release has generated community discussion on Hacker News, with users noting that the SpaceXAI API now adds a default system prompt that can override user instructions, particularly regarding discussions of the system prompt itself. Some commenters claim Grok 4.6 achieves Fable-like intelligence, outperforms GPT-5.6-Sol on most benchmarks, and is cheaper than Kimi K3 on API pricing, with generous usage on Cursor subscriptions. However, others question how multiple labs could release Fable-level models within two months, suggesting possible benchmark hacking or technique circulation. The release is seen as making Grok a more serious competitor in the frontier AI space, though its polarizing reputation may limit adoption.
 
-hackernews · ColinWright · Aug 12, 10:04 · [Discussion](https://news.ycombinator.com/item?id=49270022)
+hackernews · iLuddite · Aug 12, 15:32 · [Discussion](https://news.ycombinator.com/item?id=49274027)
 
-**「Background」** Timothy Gowers is a British mathematician and Fields Medalist \(1998\), known for his work in functional analysis and combinatorics. He is currently a professor at the Collège de France and the University of Cambridge. His blog post analyzes the mathematical capabilities of large language models, focusing on sampling and test-time scaling.
+**「Background」** Grok is a series of large language models developed by xAI, Elon Musk&\#x27;s artificial intelligence company. The models are designed to be maximally truthful and helpful, with a distinctive witty and irreverent tone. Grok 4.6, released on August 12, 2026, builds on Grok 4.5 with a focus on long-running agents and more ambitious interactive and visual work. xAI claims its intelligence is comparable to OpenAI&\#x27;s GPT-5.6 Sol and Anthropic&\#x27;s Claude Fable 5, and it is positioned as a competitive option in the frontier AI market.
 
-**「Impact」** For researchers and engineers working on AI-driven mathematics, Gowers&\#x27; analysis underscores the practical value of sampling-based approaches and test-time scaling, which could guide future tool development and research priorities. The community discussion also points to a growing interest in using LLMs to find counterexamples and solve clearly stated problems, which may influence how AI is integrated into mathematical research workflows.
+**「Impact」** Grok 4.6&\#x27;s release intensifies competition among frontier AI labs, potentially pressuring pricing and performance standards, but its default system prompt behavior could frustrate developers who need to customize model behavior, and skepticism about benchmark integrity may affect trust in its claimed capabilities.
 
-**「Community Discussion」** Commenters note that the post is essentially about test-time scaling, citing Google&\#x27;s AlphaCode as an early example of sampling success. There is also discussion about AI&\#x27;s affinity for finding counterexamples and the sociological trend of pursuing prominent problems, with some pointing to Gowers&\#x27; earlier prediction that machines would take over creative mathematics by 2100.
+**「Community Discussion」** Commenters are divided: some praise Grok 4.6&\#x27;s speed and conciseness compared to rivals, while others express suspicion about the rapid convergence of model capabilities, suggesting possible benchmark manipulation. There is also concern about the API&\#x27;s default system prompt overriding user instructions, which some find annoying and limiting.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Timothy_Gowers">Timothy Gowers - Wikipedia</a></li>
-<li><a href="https://www.britannica.com/biography/William-Timothy-Gowers">Timothy Gowers | Mathematician, Fields Medal, Cambridge ... Timothy Gowers (1963 - ) - Biography - MacTutor History of ... Timothy Gowers&#x27;s web page - University of Cambridge Timothy Gowers, Fields Medal Winner - advancedmath.org Biography and publications | Timothy Gowers - Combinatorics ... The Mathematics of Everyday Life, with Sir Tim Gowers</a></li>
-<li><a href="https://mathshistory.st-andrews.ac.uk/Biographies/Gowers/">Timothy Gowers (1963 - ) - Biography - MacTutor History of ...</a></li>
+<li><a href="https://x.ai/news/grok-4-6">Introducing Grok 4.6 | SpaceXAI</a></li>
+<li><a href="https://aireleasetracker.com/model/xai/grok-4.6">Grok 4.6 — Benchmarks, Specs &amp; Release Date</a></li>
+<li><a href="https://9to5mac.com/2026/08/12/spacexai-releases-grok-4-6/">SpaceXAI releases Grok 4.6, claiming GPT-5.6 Sol ... - 9to5Mac</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM`, `#mathematics`, `#test-time scaling`, `#AI research`, `#machine learning`
+**Tags**: `#AI`, `#LLM`, `#xAI`, `#Grok`, `#frontier models`
 
 ---
 
 <a id="item-tech-news-5"></a>
-### [Woxi: Open-Source Wolfram Language Interpreter in Rust](https://woxi.ad-si.com/) ⭐️ 8.0/10
-
-Woxi is an open-source interpreter for the Wolfram Language written in Rust, offering a Mathematica-like GUI called Woxi Studio built with iced, as well as CLI, Jupyter kernel, Python package, npm package, and WASM module interfaces. It aims to provide a fast, embeddable alternative to Mathematica, with startup times typically in milliseconds compared to seconds for the Wolfram kernel, making it practical for shell scripts and short-lived processes. The project ensures conformance with approximately 26,000 unit tests and about 900 .wls script snapshot tests, and is currently focused on fixing edge cases, improving performance, and growing the community. Woxi is free and open source, and can run in a browser via WASM or be embedded as a scripting language in other applications. The project is hosted on GitHub and welcomes contributions and bug reports.
-
-hackernews · adius · Aug 12, 10:06 · [Discussion](https://news.ycombinator.com/item?id=49270040)
-
-**「Background」** The Wolfram Language is the programming language underlying Mathematica, a proprietary computational system widely used in scientific, engineering, and mathematical computing. Mathematica&\#x27;s kernel typically takes seconds to start, which makes it impractical for short-lived scripts or embedding. Woxi is an open-source interpreter for the Wolfram Language written in Rust, designed to start in milliseconds and be embeddable in browsers via WebAssembly or in other applications. It was previously posted on Hacker News six months ago, and the project has been under active development since then.
-
-**「Impact」** Woxi provides a viable open-source alternative for developers and researchers who need a fast, embeddable Wolfram Language interpreter, potentially reducing reliance on proprietary Mathematica licenses for certain use cases. Its WASM support and embeddability could enable new applications in web-based and embedded scientific computing, though it is not yet a full replacement for Mathematica.
-
-**「Community Discussion」** Community members have tested Woxi&\#x27;s multivariable calculus visualizations and found them displayable, though correctness is uncertain without Mathematica for comparison. Some users miss features like out-of-order execution and the % variable for quick calculations, and there is interest in a control systems module. Others express hope that Woxi could become a well-integrated, fast open-source CAS alternative to Sage, and note that it has successfully handled algebra problems that Sympy, Sage, Xcas, and Maxima could not.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://news.ycombinator.com/item?id=47155526">Woxi: Wolfram Mathematica Reimplementation in Rust | Hacker News</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Wolfram Language`, `#Rust`, `#open-source`, `#scientific computing`, `#interpreter`
-
----
-
-<a id="item-tech-news-6"></a>
-### [Researchers Steal Hidden Reasoning Traces from LLM APIs](https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything) ⭐️ 8.0/10
-
-Researchers demonstrated a method to steal hidden chain-of-thought reasoning from proprietary LLM APIs by replaying encrypted reasoning blocks into weaker sibling models and jailbreaking them. The attack worked because Anthropic, OpenAI, and Google used the same encryption key across models in a family, allowing encrypted traces from frontier models to be decrypted by weaker models. The paper, hosted at stolen-thoughts.com, includes examples of extracted reasoning traces and a prompt injection variant that exploits models&\#x27; tendency to trust their own reasoning. All providers acknowledged the report and have since fixed the vulnerability, but the paper provides a detailed look at the raw reasoning traces of proprietary models. The attack was easiest against Claude Haiku 4.5, using a simple prompt to transcribe the reasoning verbatim.
-
-rss · Simon Willison · Aug 11, 22:40
-
-**「Background」** Proprietary LLM APIs from OpenAI, Anthropic, and Google return encrypted chain-of-thought blocks to clients, intended to hide the model&\#x27;s internal reasoning. The paper \(arXiv:2608.09867\) reveals that these encrypted blocks can be replayed into weaker sibling models, which can be jailbroken to reveal the stronger model&\#x27;s hidden reasoning in plaintext. The attack exploits the fact that models within the same family share the same encryption key, and that weaker models are more susceptible to jailbreaking. The researchers demonstrated the attack on Claude Haiku 4.5, and the providers have since fixed the vulnerability.
-
-**「Impact」** This vulnerability exposed hidden reasoning traces from major LLM APIs, potentially revealing proprietary model internals and enabling prompt injection attacks that could exfiltrate data. The fix by providers mitigates the immediate risk, but the paper&\#x27;s findings highlight the need for stronger encryption and isolation of reasoning traces in future models.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://arxiv.org/pdf/2608.09867">Stealing Reasoning Traces from Proprietary LLM APIs - arXiv.org</a></li>
-<li><a href="https://www.explainx.ai/blog/stealing-reasoning-traces-encrypted-cot-vulnerability-august-2026">Stealing Reasoning Traces: The Encrypted Chain-of-Thought ...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#LLM security`, `#chain-of-thought`, `#API vulnerability`, `#AI privacy`, `#proprietary models`
-
----
-
-<a id="item-tech-news-7"></a>
 ### [Adam&\#x27;s Basis Dependence Breaks Implicit Low-Rank Bias](https://www.reddit.com/r/MachineLearning/comments/1vmjb3p/the_loss_does_not_see_the_basis_but_adam_does_r/) ⭐️ 8.0/10
 
-A Reddit post by /u/EtherealGlyph argues that Adam&\#x27;s per-coordinate second moment breaks rotation invariance, which is key to preserving gradient descent&\#x27;s implicit low-rank bias in factored models. The author ran nine update rules on underdetermined matrix sensing at matched training loss, finding two clusters: GD, shared-scalar Adam, Muon, and Shampoo keep the bias, while Adam, RMSProp, Lion, signum, and Adafactor lose it. A one-parameter family interpolating Adam&\#x27;s denominator from per-coordinate to a shared scalar shows monotonic recovery improvement, pinpointing anisotropy as the culprit. Muon behaves unexpectedly: it is exact on truly low-rank targets but degrades fastest with added spectral tail, ceding to GD near 4% tail energy. The author also found their own optimizer&\#x27;s per-coordinate clip was harmful; switching to global norm clip improved recovery error from 0.347 to 0.220. The post includes a caveat that the 43-44% held-out error reduction on hyperspectral data uses a train-only learning rate rule that disadvantages Adam, and theory covers only memoryless rules.
+A Reddit post reports that Adam&\#x27;s per-coordinate second moment breaks rotation invariance in factored models W = UV^T, causing loss of GD&\#x27;s implicit low-rank bias. Experiments on underdetermined matrix sensing with nine update rules at matched training loss show two clusters: GD, shared-scalar Adam, Muon, and Shampoo retain the bias, while Adam, RMSProp, Lion, signum, and Adafactor lose it. A one-parameter family interpolating Adam&\#x27;s denominator from per-coordinate to a shared scalar shows recovery improves monotonically, pinning the damage on anisotropy rather than adaptivity. Muon behaves unexpectedly: exact on truly low-rank targets but degrades fastest with spectral tail, ceding to GD near 4% tail energy. The author also found their own optimizer&\#x27;s per-coordinate clip broke its intended structure; switching to global norm clip improved recovery error from 0.347 to 0.220. A caveat notes the 43-44% held-out error reduction on hyperspectral data uses a train-only learning rate rule that gives Adam the worst rate on its grid; with per-method best rates the gap is smaller. Theory covers memoryless rules only; momentum is empirical. Paper: https://arxiv.org/abs/2608.05136; code: https://github.com/idevender/loss-basis-adam.
 
 reddit · r/MachineLearning · /u/EtherealGlyph · Aug 12, 16:39
 
-**「Background」** In factored models like W = UV^T, the loss is invariant to rotations \(U,V\) → \(UQ, VQ\), and gradient descent respects this invariance. Adam&\#x27;s per-coordinate second moment depends on the basis in which factors are written, breaking this invariance. Implicit low-rank bias refers to the tendency of certain optimizers to converge to low-rank solutions, which is beneficial in underdetermined settings like matrix sensing.
+**「Background」** In factored models like W = UV^T, the loss is invariant to rotations \(U,V\) → \(UQ, VQ\), and gradient descent respects this symmetry. Adam&\#x27;s per-coordinate second moment depends on the basis in which factors are written, breaking this invariance. Implicit low-rank bias refers to the tendency of certain optimizers to converge to low-rank solutions in underdetermined problems, which is desirable for generalization.
 
-**「Impact」** This insight provides a mechanistic explanation for why adaptive optimizers like Adam lose implicit low-rank bias, guiding practitioners to choose optimizers \(e.g., shared-scalar Adam, Muon\) when low-rank solutions are desired, and suggests that modifying Adam&\#x27;s denominator to be more isotropic could improve recovery in matrix sensing tasks.
+**「Impact」** This insight provides a concrete design principle for optimizers: preserving rotation invariance is key to retaining implicit low-rank bias, which could guide development of new optimizers or modifications to existing ones. Practitioners using Adam-like optimizers in low-rank or matrix sensing tasks may need to consider basis-dependent behavior, though the practical significance depends on the task and the magnitude of the effect.
 
 **Tags**: `#optimization`, `#low-rank bias`, `#Adam`, `#matrix sensing`, `#implicit regularization`
 
 ---
 
-<a id="item-tech-news-8"></a>
-### [LTX-2.5: Open-Source Video Model Runs on RTX 5090](https://ltx.io/model/ltx-2-5) ⭐️ 8.0/10
+<a id="item-tech-news-6"></a>
+### [LTX-2.5 Open-Source Video Model Runs on RTX 5090](https://ltx.io/model/ltx-2-5) ⭐️ 8.0/10
 
-LTX has released LTX-2.5, an open-source video generation foundation model, with weights, training code, and inference pipeline fully open. It can run locally on a single RTX 5090 and is free for commercial use for companies with annual revenue under $10 million. The model supports text-to-video and image-to-video generation, featuring improved multi-shot coherence and prompt adherence, and incorporates a new diffusion video decoder and a Gemma 4 12B text encoder. In a benchmark of 98 text-to-video prompts, LTX 2.5 Pro ranked first among ten models.
+LTX has released LTX-2.5, an open-source video generation foundation model, with weights, training code, and inference pipeline fully available. It can run locally on a single RTX 5090, and commercial use is free for companies with annual revenue under $10 million. The model supports text-to-video and image-to-video generation, featuring improved multi-shot coherence and prompt adherence, a new diffusion video decoder, and a Gemma 4 12B text encoder. In a 98-prompt text-to-video artifact benchmark, LTX 2.5 Pro ranked first among ten models.
 
 telegram · zaihuapd · Aug 12, 02:15
 
-**「Background」** LTX is an AI video-generation ecosystem developed by Lightricks, an Israeli tech company. It includes the LTX Studio platform, launched in February 2024, as well as open-source models and commercial API access. The LTX-2.5 release continues this open-source approach, offering open weights that can be run locally, fine-tuned, and deployed on user-controlled hardware, with free commercial use for companies under $10 million in annual recurring revenue.
+**「Background」** LTX-2.5 is an open-source video generation foundation model built on a diffusion transformer architecture, designed for production, research, education, and experimentation. It follows a trend of increasingly capable open-weight video models that can run on consumer hardware, making advanced video generation more accessible to individual developers and small teams.
 
-**「Impact」** This release enables individual developers and small companies to run a state-of-the-art video generation model locally on consumer hardware, potentially accelerating innovation in video generation applications. The free commercial use threshold may attract startups, though the benchmark&\#x27;s limited scope \(98 prompts\) means real-world performance may vary.
+**「Impact」** This release enables developers and researchers to run a state-of-the-art video generation model locally on consumer hardware, potentially accelerating video generation workflows and lowering barriers to entry for small teams and individuals.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/LTX_Studio">LTX Studio - Wikipedia</a></li>
-<li><a href="https://ltx.io/model/ltx-2-5">LTX - 2 . 5 : LTX&#x27;s Latest AI Open - Source Foundation Model | LTX</a></li>
+<li><a href="https://ltx.io/model/open-source">LTX-2.5 Model Open Source: AI Video Generator</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#video generation`, `#open-source`, `#AI models`, `#diffusion`, `#LTX`
+**Tags**: `#video generation`, `#open source`, `#AI model`, `#diffusion`, `#LTX`
+
+---
+
+<a id="item-tech-news-7"></a>
+### [Zed Introduces Delta: Multi-Agent AI Coding Framework](https://zed.dev/blog/introducing-delta) ⭐️ 7.0/10
+
+Zed has announced Delta, a multi-agent AI coding framework that introduces a new protocol for collaborative AI development. Delta enables multiple AI agents to work together on coding tasks, with features such as realtime collaborative multiplayer conversations and conversation-as-document, allowing inline comments within agent conversations. This framework is designed to enhance AI-assisted software engineering by enabling more complex, coordinated AI interactions. The announcement highlights Zed&\#x27;s continued investment in AI capabilities, building on its existing AI agent features. Delta represents a significant step toward more sophisticated AI collaboration in code editors, though its practical utility is still being debated.
+
+hackernews · khy · Aug 12, 18:19 · [Discussion](https://news.ycombinator.com/item?id=49276574)
+
+**「Background」** Zed is a high-performance code editor known for its speed and built-in AI agent capabilities. In September 2025, Zed introduced the Agent Client Protocol \(ACP\), an open standard that allows any editor or IDE to connect to AI coding agents, enabling flexibility in switching between different AI models. Delta builds on this foundation by introducing a multiplayer environment where multiple humans and agents can collaborate in the same buffer in real time, with shared channels, threads, and agent state, as well as a conversation-as-document feature that allows inline commenting on agent conversations.
+
+**「Impact」** For developers using Zed, Delta could transform how AI agents are used in coding workflows, particularly for mentoring junior engineers or reviewing pull requests by allowing direct inspection of the AI&\#x27;s reasoning process. However, the actual impact depends on adoption and whether the multi-agent paradigm proves more effective than single-agent approaches.
+
+**「Community Discussion」** Community reactions are mixed: some question the need for multi-player coding, while others see value in collaborative features for mentoring and code review. There is also criticism of AI-generated code summaries for being verbose or missing edge cases, and a complaint about the blog&\#x27;s low-contrast design.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.digitalapplied.com/blog/zed-ai-coding-deep-dive-multiplayer-agents-2026">Zed AI Coding Deep Dive: Parallel Agents Guide 2026</a></li>
+<li><a href="https://tessl.io/blog/zed-debuts-agent-client-protocol-to-connect-ai-coding-agents-to-any-editor/">Zed debuts Agent Client Protocol to connect AI coding agents to any editor</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI-assisted development`, `#Zed`, `#multi-agent systems`, `#code editor`, `#LLM`
+
+---
+
+<a id="item-tech-news-8"></a>
+### [Why Tiny JPEGs Look Different in Chrome](https://guillaumetech.github.io/posts/jpg-scaling-chrome/) ⭐️ 7.0/10
+
+The article explains that Chrome&\#x27;s downscaling algorithm makes tiny JPEGs look different compared to Firefox, due to differences in how each browser scales images. Chrome uses a blurrier algorithm, while Firefox produces sharper images with slight ringing artifacts. The author advises developers to use appropriately sized images and avoid JPEGs for icons, as lossy compression can introduce artifacts. A Firefox bug \(bugzilla.mozilla.org/show\_bug.cgi?id=2033250\) is referenced for work on decompressing at lower scales. The CSS \`image-rendering\` attribute can sometimes control the scaling algorithm, though browser behavior varies, especially on high-DPI monitors.
+
+hackernews · gutechh · Aug 12, 14:00 · [Discussion](https://news.ycombinator.com/item?id=49272549)
+
+**「Background」** Web browsers use different image downscaling algorithms when displaying images smaller than their native resolution. Chrome historically used a smoother, more blurry algorithm, while Firefox used a sharper one that can introduce ringing artifacts. This difference becomes especially noticeable with tiny images, such as small icons, where the scaling algorithm significantly affects perceived quality. The issue is not limited to JPEGs; it also affects PNGs and other formats, and can be influenced by CSS properties like \`image-rendering\` and by high-DPI displays.
+
+**「Impact」** Web developers may see inconsistent icon rendering across browsers, particularly when using small images scaled down from larger sources, which can affect visual quality and user experience. The issue is especially relevant for Electron apps, as one commenter noted having to delay upgrades due to icon distortion.
+
+**「Community Discussion」** Commenters confirmed the issue also affects PNGs and noted that using appropriately sized images is more important than the format. Some prefer Firefox&\#x27;s sharper scaling, while others mention the \`image-rendering\` CSS attribute as a potential workaround, though browser behavior varies.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://stackoverflow.com/questions/4247535/firefox-downscaled-image-quality-problem">Firefox downscaled image quality problem - Stack Overflow</a></li>
+<li><a href="https://forum.kodi.tv/showthread.php?tid=200401">GUI: improved image scaling algorithm | Forum</a></li>
+<li><a href="https://polotno.com/docs/image-downscaling">Image Downscaling | Polotno SDK Documentation</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#web-development`, `#browser-rendering`, `#image-scaling`, `#chrome`, `#firefox`
 
 ---
 
 <a id="item-tech-news-9"></a>
-### [xAI Releases Grok 4.6 for Long-Running Agentic Tasks](https://x.ai/news/grok-4-6) ⭐️ 8.0/10
+### [uBlock Origin Stops Filtering Facebook Ads](https://digitalescapetools.com/2026/08/ublock-origin-stops-chasing-facebook-ads.html) ⭐️ 7.0/10
 
-xAI released Grok 4.6 on August 12, 2026, building on Grok 4.5 with enhanced capabilities for long-running agentic and interactive tasks, as well as improved vision performance. The model matches GPT-5.6 Sol on the Artificial Analysis intelligence index, which aggregates nine benchmarks. Grok 4.6 is available immediately on Cursor, Grok Build, and the API, priced at $2 per million input tokens and $6 per million output tokens, with a faster version at double the price. To promote adoption, xAI is offering double usage for the first week on Grok Build and Cursor.
+uBlock Origin has ceased filtering ads on Facebook, citing the increasing difficulty of doing so as Facebook&\#x27;s ad-serving code becomes more complex and resistant to traditional ad-blocking methods. This decision, reported by Neowin and discussed on Reddit, marks a significant retreat in the ongoing arms race between ad blockers and major platforms. The move highlights the limitations of current ad-blocking techniques and may prompt users to seek alternative solutions, such as leaving Facebook or using more aggressive methods like computer vision-based ad detection. The change affects users who rely on uBlock Origin to block Facebook ads, potentially increasing their exposure to ads on the platform.
 
-telegram · zaihuapd · Aug 12, 15:54
+hackernews · Markoff · Aug 12, 11:28 · [Discussion](https://news.ycombinator.com/item?id=49270726)
 
-**「Background」** Grok is a series of large language models developed by xAI, launched in November 2023 by Elon Musk. Grok 4.6 is the latest iteration, building on Grok 4.5 with a focus on long-running agents and more ambitious interactive and visual work.
+**「Background」** uBlock Origin is a widely used open-source browser extension that blocks ads and other unwanted content using filter lists. It has long been engaged in an arms race with Facebook, which continually changes its code to evade ad-blocking efforts. The decision to stop filtering Facebook ads comes after years of this back-and-forth, as reported by Neowin and discussed on the uBlockOrigin subreddit. This move reflects the increasing difficulty of maintaining effective ad-blocking on platforms that invest heavily in circumventing such tools.
 
-**「Impact」** Developers and enterprises using Cursor, Grok Build, or the xAI API can now deploy Grok 4.6 for long-running agentic workflows and vision tasks, with a promotional double-usage period in the first week.
+**「Impact」** Users of uBlock Origin who frequent Facebook will no longer have ads filtered on that platform, potentially leading to a more ad-heavy experience. This may push some users to abandon Facebook or explore alternative ad-blocking strategies, though the effectiveness of such alternatives remains uncertain.
+
+**「Community Discussion」** Community members largely support the decision, with some noting that Facebook&\#x27;s ad-blocking resistance is a deliberate cat-and-mouse game. Others speculate that the ultimate solution lies in computer vision models that can identify and overlay ads in real-time, while some question the rationale behind Facebook&\#x27;s efforts to bypass ad blockers, given that users with blockers are unlikely to engage with ads.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Grok_%28chatbot%29">Grok (chatbot) - Wikipedia</a></li>
-<li><a href="https://x.ai/news/grok-4-6">Introducing Grok 4 . 6 | SpaceXAI</a></li>
+<li><a href="https://www.resetera.com/threads/facebook-ads-are-so-hard-to-block-that-ublock-origin-stopped-filtering-them.1601830/">Facebook ads are so hard to block that uBlock Origin stopped ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#Grok`, `#xAI`, `#agentic AI`, `#model release`
+**Tags**: `#ad-blocking`, `#privacy`, `#facebook`, `#ublock-origin`, `#tech-industry`
 
 ---
 
 <a id="item-tech-news-10"></a>
-### [Live Webcam Aggregation for 2026 Solar Eclipse](https://jonty.github.io/2026_eclipse_webcams/) ⭐️ 7.0/10
+### [AI&\#x27;s Impact on Software Engineering Roles](https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html) ⭐️ 7.0/10
 
-A developer named jonty has created a live webcam aggregation page for the 2026 solar eclipse, available at https://jonty.github.io/2026\_eclipse\_webcams/. The page coordinates webcams across Iceland and Spain, where the eclipse is visible, and was built quickly in 2024 for the US eclipse, finishing minutes before totality. The author shared it on Hacker News, noting that coordinating the cameras was unexpected and hoping the site doesn&\#x27;t break. The page is a practical resource for viewing the eclipse live, with community members sharing additional trackers and webcam links.
+A blog post argues that AI is eliminating mid-level software engineering roles by automating routine coding, while amplifying the impact of both highly skilled and less skilled engineers. The author contends that AI tools allow bad engineers to scale their poor practices across organizations, and that the traditional handoff from senior engineers to junior coders is becoming unnecessary. The post emphasizes the importance of not outsourcing critical thinking to LLMs and warns against taking shortcuts in learning. While the article offers a nuanced perspective, community members question whether there is yet concrete evidence of job losses directly attributable to AI coding agents. The discussion reflects real-world concerns about the changing nature of junior and senior work in the industry.
 
-hackernews · zoenolan · Aug 12, 11:53 · [Discussion](https://news.ycombinator.com/item?id=49270953)
+hackernews · florianherrengt · Aug 12, 13:20 · [Discussion](https://news.ycombinator.com/item?id=49271994)
 
-**「Background」** A total solar eclipse occurs when the Moon passes directly between the Sun and Earth, completely blocking the Sun&\#x27;s disk for observers within a narrow path of totality. The eclipse on August 12, 2026, is notable as the first total solar eclipse visible in Europe in 27 years, with totality crossing parts of Russia, Greenland, Iceland, and Spain, and a large partial eclipse across the rest of Europe. Webcam aggregation pages like the one described compile live camera feeds from locations along the path of totality, allowing remote viewers to watch the event in real time.
+**「Background」** The software engineering job market has traditionally featured a hierarchy where senior engineers handle complex design and thinking, while junior or mid-level engineers implement code, often relying on resources like Stack Overflow. With the rise of large language models \(LLMs\) and AI coding agents, routine coding tasks can be automated, potentially disrupting this structure. The debate centers on whether AI will replace certain roles or simply shift the skills required, with some arguing that AI amplifies the productivity of both top and bottom performers while squeezing the middle.
 
-**「Impact」** Viewers of the 2026 solar eclipse can use this aggregation page to watch live webcam feeds from Iceland and Spain, providing a centralized resource during the event. The page may experience high traffic or technical issues, as the author expressed uncertainty about its stability.
+**「Impact」** For software engineers, particularly those in mid-level roles, the article suggests that AI may reduce demand for routine coding work, pushing them to develop stronger architectural and critical thinking skills to remain valuable. However, concrete evidence of widespread job losses is still lacking, so the immediate impact remains uncertain.
 
-**「Community Discussion」** Community members shared historical context about eclipses, such as Thales&\#x27; prediction in 585 BC, and personal experiences traveling to view eclipses. Others recommended alternative trackers like eclipsefan.org and YouTube webcams, noting that some sites were overwhelmed by traffic.
+**「Community Discussion」** Commenters resonate with the idea that AI can amplify bad engineering, especially among long-tenured engineers who have lost interest in the craft, and note that the traditional senior-to-junior handoff is becoming obsolete. Some question whether there is yet irrefutable evidence of job losses from AI coding agents, while others reflect on the importance of not outsourcing critical thinking to LLMs.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Solar_eclipse_of_August_12,_2026">Solar eclipse of August 12, 2026 - Wikipedia</a></li>
-<li><a href="https://www.timeanddate.com/live/eclipse-solar-2026-august-12">LIVE Stream: Total Solar Eclipse August 2026</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#solar eclipse`, `#webcams`, `#astronomy`, `#live streaming`, `#community`
+**Tags**: `#AI`, `#software-engineering`, `#job-market`, `#LLM`, `#industry-analysis`
 
 ---
 
 <a id="item-tech-news-11"></a>
 ### [License Plate Reader Searches Should Require a Warrant](https://andrewpwheeler.com/2026/08/12/license-plate-reader-searches-should-require-a-warrant/) ⭐️ 7.0/10
 
-The article argues that warrantless searches of license plate reader \(LPR\) data are unconstitutional and require legal reform. It highlights that current practices allow police to access historical location data without a warrant, creating a significant privacy gap. The author contends that this violates Fourth Amendment protections and calls for statutory or constitutional changes to require judicial oversight. The piece emphasizes the need for a warrant for historical searches, while allowing warrant-free access for ongoing emergencies. This position is supported by concerns over police misuse, such as stalking and unauthorized data access.
+The article argues that warrantless searches of automated license plate reader \(ALPR\) data should be prohibited, framing the issue as a significant privacy and civil liberties concern. It highlights the increasing deployment of ALPRs by law enforcement and the potential for mass surveillance, emphasizing the need for judicial oversight. The author contends that current practices, where police can access data without a warrant, undermine constitutional protections. The piece calls for legal safeguards to ensure that ALPR data is not used for indiscriminate tracking, and it stresses the importance of updating laws to keep pace with surveillance technology.
 
 hackernews · apwheele · Aug 12, 14:43 · [Discussion](https://news.ycombinator.com/item?id=49273165)
 
-**「Background」** License plate readers are automated cameras that capture license plate numbers and locations, often mounted on police cars or infrastructure. These systems generate vast databases of historical movement data, which law enforcement can query without a warrant. The Fourth Amendment protects against unreasonable searches, but courts have not consistently applied it to data collected by third parties, such as LPR systems. This legal ambiguity has led to calls for clearer rules governing access to such surveillance data.
+**「Background」** Automated license plate readers \(ALPRs\) are AI-powered cameras that capture and analyze images of all passing vehicles, storing details such as location, date, and time. These systems are increasingly deployed by law enforcement, but their use raises privacy concerns because they enable mass surveillance without individualized suspicion. The article argues that warrantless searches of ALPR data should be prohibited, and that requiring a warrant for historical searches would not seriously impede police investigations. The current practice of not retaining data is criticized as ineffective because it does not prevent illegal searches and limits the legitimate use of the data.
 
-**「Impact」** If adopted, a warrant requirement would significantly restrict police access to historical LPR data, reducing potential abuses and enhancing privacy protections for all individuals. However, the impact depends on legislative or judicial action, which may vary by jurisdiction and could face opposition from law enforcement agencies.
+**「Impact」** If adopted, a warrant requirement would directly affect law enforcement agencies that currently use ALPR data without judicial approval, potentially reducing the scope of surveillance and increasing accountability. It would also set a precedent for how other mass surveillance technologies are regulated, though the practical impact depends on legislative and judicial action.
 
-**「Community Discussion」** Commenters generally agree that warrantless access to LPR data is problematic, with some suggesting a middle ground of warrants for historical searches and warrant-free flags for ongoing issues. Others argue that LPRs are essentially general-purpose cameras that could be repurposed, and that the current legal framework is untenable. There is also debate about whether the Fourth Amendment applies to data held by third parties, with some calling for statutory or constitutional fixes.
+**「Community Discussion」** Commenters express concerns about the broader implications of ALPRs, with some noting that these devices are general-purpose cameras that could be repurposed for mass surveillance, and others suggesting cryptographic solutions to prevent tracking. There is consensus that police cannot be trusted with warrantless access, but some argue that a warrant requirement is insufficient and that mass spying should not be allowed by default. The discussion also touches on the inevitability of cameras in public spaces and the need for stronger legal protections.
 
-**Tags**: `#privacy`, `#surveillance`, `#civil-liberties`, `#law`, `#technology-policy`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://andrewpwheeler.com/2026/08/12/license-plate-reader-searches-should-require-a-warrant/">License Plate Reader Searches Should Require a Warrant | Andrew ...</a></li>
+<li><a href="https://deflock.org/">DeFlock is an open-source project that maps license plate readers ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#privacy`, `#surveillance`, `#law-enforcement`, `#civil-liberties`, `#policy`
 
 ---
 
 <a id="item-tech-news-12"></a>
-### [AI&\#x27;s Squeeze on Mid-Level Software Engineers](https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html) ⭐️ 7.0/10
+### [AI Coding Erodes System Understanding](https://simonwillison.net/2026/Aug/12/florian-herrengt/) ⭐️ 7.0/10
 
-The article argues that AI is disproportionately impacting mid-level software engineers, effectively removing the &\#x27;middle class&\#x27; of the profession. It suggests that AI tools enable senior engineers to handle tasks that were previously delegated to mid-level developers, reducing the need for that tier of expertise. The piece highlights concerns about career progression, as junior engineers may lack opportunities to develop the skills needed to advance. It also notes that &\#x27;bad&\#x27; engineers can amplify their poor practices across organizations with AI, while emphasizing the importance of critical thinking and proper learning. The article has sparked substantial discussion, with 383 points and 320 comments on Hacker News, reflecting its relevance to the software engineering community.
+Florian Herrengt&\#x27;s blog post, quoted by Simon Willison, argues that AI-assisted coding is removing the &\#x27;middle class&\#x27; of software engineering by eroding developers&\#x27; deep understanding of their systems. The quote illustrates a scenario where a team repeatedly fails to fix a bug because the original developer no longer knows where the data comes from and relies on asking Claude, an AI, for answers. This leads to projects becoming so convoluted with layers and services that no one can fully comprehend them. The post highlights a critical concern about maintainability and cognitive debt in AI-driven development, resonating with current industry debates on the trade-offs of AI productivity gains.
 
-hackernews · florianherrengt · Aug 12, 13:20 · [Discussion](https://news.ycombinator.com/item?id=49271994)
+rss · Simon Willison · Aug 12, 15:08
 
-**「Background」** The software engineering job market has traditionally had a clear hierarchy: senior engineers handle complex design and architecture, mid-level engineers implement features and fix bugs, and junior engineers learn on the job. AI coding assistants, such as GitHub Copilot and ChatGPT, have rapidly improved in capability, allowing developers to generate code faster and automate routine tasks. This has led to speculation about how AI will reshape the industry, with some predicting a &\#x27;hollowing out&\#x27; of mid-level roles as AI takes over more routine coding work.
+**「Background」** AI-assisted coding tools like GitHub Copilot and Claude have become widely adopted, promising significant productivity boosts by generating code and suggesting fixes. However, critics warn that reliance on these tools can lead to &\#x27;cognitive debt,&\#x27; where developers lose the mental model of their codebase, making it harder to debug and maintain over time. Herrengt&\#x27;s post taps into this growing concern, framing it as a shift in the software engineering profession where deep understanding is devalued.
 
-**「Impact」** Mid-level software engineers may face reduced job opportunities and slower career advancement as AI tools allow senior engineers to handle more work independently, potentially leading to a more polarized job market with junior and senior roles. However, the long-term impact remains uncertain, as AI could also create new roles and shift the nature of engineering work.
+**「Impact」** For development teams heavily using AI assistants, this highlights a real risk of accumulating unmaintainable codebases that are difficult to debug, potentially increasing long-term costs and technical debt. It underscores the need for practices that preserve system understanding, such as code reviews and documentation, even as AI tools become more prevalent.
 
-**「Community Discussion」** Commenters largely agree that AI is automating the work of &\#x27;Stack Overflow engineers&\#x27; who rely on copying code, but they express concern about the loss of learning opportunities for junior engineers. Some highlight that AI can amplify the impact of &\#x27;bad&\#x27; engineers, while others emphasize the need to maintain critical thinking and avoid over-reliance on AI. There is also debate about whether the next generation of top engineers will have the same opportunities to gain experience through struggle and failure.
-
-**Tags**: `#AI`, `#software-engineering`, `#job-market`, `#career`, `#LLM`
+**Tags**: `#AI-assisted development`, `#software engineering`, `#maintainability`, `#developer productivity`, `#industry impact`
 
 ---
 
 <a id="item-tech-news-13"></a>
-### [No Lossless AI Text Rewrites: Engineers Must Own Every Sentence](https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/#atom-everything) ⭐️ 7.0/10
+### [No Lossless AI Rewrites: Engineers Must Own Every Sentence](https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/) ⭐️ 7.0/10
 
-Sophie Alpert published an internal policy on acceptable AI use by engineers, arguing that there are no lossless transformations of natural-language text. She emphasizes that every rewrite or rephrase by an LLM changes meaning, and if the AI lacks the writer&\#x27;s detailed mental model, information is lost. The policy requires engineers to stand behind every idea and sentence in their documentation, ensuring the entire document reflects their own thoughts. If a reviewer questions a line, it is unacceptable to dismiss it as AI-generated. Simon Willison highlights this rule as crucial for teams using LLMs to massage writing.
+Sophie Alpert published an internal policy on acceptable use of AI writing by engineers, arguing that there are no lossless transformations of natural-language text. The policy requires that engineers stand behind every idea and sentence in their documentation, ensuring the entire document represents their own thoughts before sharing. If a reviewer questions a line, it is unacceptable to dismiss it as AI-written; doing so confuses readers and wastes their time. Alpert explains that every rewrite or rephrase changes meaning, and when done by an entity lacking the writer&\#x27;s detailed mental model, information is lost. Simon Willison highlights this rule as crucial for engineers using LLMs to massage their writing.
 
 rss · Simon Willison · Aug 11, 23:48
 
-**「Background」** Large language models are increasingly used to assist with writing, including documentation and code comments. However, these models do not have access to the author&\#x27;s unexpressed intentions, so any rewrite may subtly alter the intended meaning. Alpert&\#x27;s policy addresses this by mandating that engineers take full responsibility for AI-assisted text, ensuring it accurately represents their thoughts.
+**「Background」** AI-assisted writing tools, such as large language models \(LLMs\), are increasingly used by engineers to draft or refine documentation. However, these models do not have access to the writer&\#x27;s full intent, so any transformation they apply can subtly alter the original meaning. Alpert&\#x27;s policy addresses this by emphasizing accountability and the preservation of authorial intent in technical writing.
 
-**「Impact」** This policy provides a concrete, actionable standard for engineering teams adopting AI writing tools: every sentence must be personally vetted and owned by the author, preventing the spread of misleading or inaccurate documentation. It also sets a precedent for accountability in AI-assisted workflows, potentially influencing how other organizations formalize their own guidelines.
+**「Impact」** This policy provides a practical guideline for engineering teams adopting AI writing tools, potentially reducing miscommunication and documentation errors by requiring human oversight of every AI-generated change. It may influence how organizations formalize AI usage policies, though its adoption depends on individual team cultures.
 
-**Tags**: `#AI-assisted writing`, `#engineering policy`, `#LLM usage`, `#documentation`, `#accountability`
+**Tags**: `#AI-assisted writing`, `#documentation`, `#LLM usage`, `#engineering culture`, `#writing policy`
 
 ---
 
 <a id="item-tech-news-14"></a>
 ### [Honest CS Conference Ranking by Destination Quality](https://www.reddit.com/r/MachineLearning/comments/1vmbdk6/i_built_an_honest_cs_conference_ranking_sorted_by/) ⭐️ 7.0/10
 
-A new website, honestcsrankings.org, ranks approximately 540 upcoming CORE-ranked computer science conferences by destination quality rather than academic prestige. The ranking incorporates real climate data for the conference month, safety from the Global Peace Index, cost from World Bank price levels, accessibility, and a &\#x27;City Vibe&\#x27; factor. Users can filter by field, rank, or open deadlines, set a home city to rank by distance, export deadlines to .ics files, and share deep links with coauthors. The site includes an &\#x27;Upsets&\#x27; tab highlighting A\* venues in poor destinations. ICML/ICLR 2027 are missing because they are not yet announced, and COLM is absent because CORE has not ranked it; smaller conferences are scraped from WikiCFP and may contain errors.
+A new website, honestcsrankings.org, ranks approximately 540 CORE-ranked computer science conferences by destination quality rather than academic prestige. It factors in weather during the conference month using real climate data, safety via the Global Peace Index, cost based on World Bank price levels, accessibility, and &\#x27;city vibe.&\#x27; Users can filter by field, rank, or open deadlines, set a home city to rank by distance, export deadlines to .ics files, and share deep links with coauthors. The site includes an &\#x27;Upsets&\#x27; tab highlighting A\* venues in poor destinations, and notes that ICML/ICLR 2027 are missing because they are not yet announced, COLM is missing because CORE has not ranked it, and smaller conferences scraped from WikiCFP may contain errors.
 
 reddit · r/MachineLearning · /u/JohnAZoidberg77 · Aug 12, 11:23
 
-**「Background」** Traditional conference rankings like the CORE ranking assess academic quality and impact, but researchers often consider the travel destination when deciding where to submit. This tool provides a data-driven alternative that prioritizes the conference experience, using publicly available datasets for climate, safety, cost, and accessibility.
+**「Background」** CORE rankings are a widely used academic classification of computer science conferences and journals, rating them from A\* \(top\) down to C. Researchers often consider venue prestige for career advancement, but the choice of which conference to attend also involves practical travel considerations. This tool reframes conference selection by prioritizing the destination experience, offering a complementary perspective to traditional rankings.
 
-**「Impact」** Researchers and students in computer science can use this tool to make more informed decisions about which conferences to attend, potentially saving money and improving travel experiences. The tool may also encourage conference organizers to consider destination quality when planning events.
+**「Impact」** Researchers and students in CS/ML can use this tool to make more informed conference attendance decisions, balancing career needs with personal preferences for travel quality. It may also encourage conference organizers to consider destination attractiveness when planning venues.
 
-**Tags**: `#conference ranking`, `#CS conferences`, `#research tools`, `#academic travel`, `#data-driven`
+**Tags**: `#conference-ranking`, `#tools`, `#machine-learning`, `#computer-science`, `#travel`
 
 ---
 
 <a id="item-tech-news-15"></a>
-### [Decoupled Descent: Exact Train-Test Error Tracking via AMP](https://www.reddit.com/r/MachineLearning/comments/1vlu1se/decoupled_descent_enforcing_exact_traintest_error/) ⭐️ 7.0/10
+### [WeChat Releases WeLM, a Resource-Efficient LLM Family](https://x.com/Weixin_WeChat/status/2087509298310209718) ⭐️ 7.0/10
 
-A new research paper introduces Decoupled Descent \(DD\), a training method that uses approximate message passing \(AMP\) Onsager corrections to enforce exact train-test error tracking in neural networks. The method addresses the common problem where training error decreases to zero while test error stagnates or increases, attributing this to data reuse bias. By applying DD, the training error asymptotically equals the testing error at each parameter iterate, as demonstrated on stylized Gaussian mixture models and a high-dimensional XOR model with a two-layer network. The paper is theoretical and not yet scaled to large models, but the author plans to develop a PyTorch-compatible package and suggests applications in optimal stopping and hyperparameter tuning.
-
-reddit · r/MachineLearning · /u/mlovik1 · Aug 11, 21:06
-
-**「Background」** In standard gradient descent training, models often overfit, achieving low training error but poor generalization, a phenomenon linked to data reuse bias. Approximate message passing is a high-dimensional statistical technique that provides corrections \(Onsager terms\) to account for dependencies introduced by iterative algorithms, enabling more accurate tracking of generalization error.
-
-**「Impact」** For researchers and practitioners in machine learning, Decoupled Descent offers a principled way to monitor and control generalization during training, potentially improving model selection and early stopping, though its practical applicability to large-scale models remains unproven.
-
-**Tags**: `#machine learning`, `#neural networks`, `#generalization`, `#approximate message passing`, `#optimization`
-
----
-
-<a id="item-tech-news-16"></a>
-### [Enterprise SSDs Hit 48% of NAND Shipments; YMTC Enters Top Three](https://china.counterpointresearch.com/%e6%9c%8d%e5%8a%a1%e5%99%a8%e9%9c%80%e6%b1%82%e6%8e%a8%e5%8d%87%e4%bc%81%e4%b8%9a%e7%ba%a7-ssd-%e5%8d%a0-nand-%e5%87%ba%e8%b4%a7%e9%87%8f%e7%99%be%e5%88%86%e4%b9%8b-48/) ⭐️ 7.0/10
-
-According to a Counterpoint report, enterprise SSDs accounted for 48% of global NAND shipments in Q2 2026, nearly doubling year-over-year, driven by AI inference workloads. Industry revenue grew fivefold compared to the same period last year. Samsung led with a 25% share, SK Hynix followed with 22%, and YMTC \(Yangtze Memory Technologies\) surpassed Kioxia to take third place with 14% for the first time. However, YMTC&\#x27;s revenue ranked only fifth due to its product mix being more consumer-oriented. The report projects that enterprise SSDs will consume more than half of total NAND bits by the end of the year.
-
-telegram · zaihuapd · Aug 12, 11:00
-
-**「Background」** NAND flash memory is the storage medium used in SSDs, USB drives, and memory cards. Enterprise SSDs are high-performance drives designed for data centers and servers, often used to handle AI workloads. Counterpoint Research is a market research firm that tracks the semiconductor industry. YMTC \(Yangtze Memory Technologies Co.\) is a Chinese NAND manufacturer that has been expanding its market presence. The Q2 2026 data marks the first time YMTC has entered the top three in NAND shipment share, according to Counterpoint&\#x27;s tracker.
-
-**「Impact」** The shift toward enterprise SSDs, fueled by AI workloads, is reshaping the NAND market, with YMTC&\#x27;s rise to third place in shipments signaling a competitive challenge to established players, though its lower revenue share highlights the importance of product mix in capturing value.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.tomshardware.com/tech-industry/ymtc-breaks-into-the-top-three-nand-makers-for-the-first-time">YMTC breaks into the top three NAND makers for the first time as AI servers swallow 48% of all flash — Chinese vendor has 14% share, according to research | Tom&#x27;s Hardware</a></li>
-<li><a href="https://finance.biggo.com/news/0d947490-529d-486e-9181-37a9219aaf44">Samsung Holds Q2 NAND Shipment Crown; China&#x27;s YMTC Breaks Into Top 3 for First Time — BigGo Finance</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#enterprise SSD`, `#NAND flash`, `#AI workloads`, `#storage market`, `#YMTC`
-
----
-
-<a id="item-tech-news-17"></a>
-### [WeChat Releases Resource-Efficient WeLM LLM Family](https://x.com/Weixin_WeChat/status/2087509298310209718) ⭐️ 7.0/10
-
-WeChat&\#x27;s team has announced WeLM, a family of general-purpose large language models focused on resource efficiency. The WeLM-80B model, which activates only 3B parameters, is already deployed in WeChat&\#x27;s AI agent Xiaowei, enabling conversational search, native WeChat operations, and mini-program services. A larger WeLM-617B model with 23B active parameters, using a mixture-of-experts \(MoE\) architecture, is under development and aims to deliver stronger reasoning and understanding at moderate activation sizes. This model is intended for complex tasks within WeChat&\#x27;s ecosystem, such as intelligent mini-program development and tool generation for Xiaowei. The release underscores WeChat&\#x27;s strategy to scale AI capabilities across its massive user base while managing computational costs.
+WeChat has released WeLM, a family of general-purpose large language models developed by Tencent&\#x27;s WeChat team, with a focus on extreme resource efficiency to scale AI capabilities across WeChat&\#x27;s massive user base. The WeLM-80B model, which has 3 billion active parameters, is already deployed in production within WeChat&\#x27;s AI agent Xiaowei, enabling dialogue, search, native WeChat operations, and mini-program services. A larger WeLM-617B model with 23 billion active parameters is under development, using a mixture-of-experts \(MoE\) architecture to achieve stronger general understanding and reasoning at moderate activation scale. This upcoming model is intended for complex tasks in the WeChat ecosystem, such as intelligent mini-program development and generation of Xiaowei mini-tools. The announcement was made via WeChat&\#x27;s official X account, highlighting the models&\#x27; resource efficiency as a key differentiator.
 
 telegram · zaihuapd · Aug 12, 13:58
 
-**「Background」** WeLM is a family of general-purpose large language models developed by Tencent&\#x27;s WeChat team, announced on August 12, 2025. The series emphasizes resource efficiency, with the WeLM-80B model \(3B active parameters\) already deployed in WeChat&\#x27;s AI agent Xiaowei, and a larger WeLM-617B model \(23B active parameters\) using a mixture-of-experts \(MoE\) architecture in development. MoE models activate only a subset of parameters per token, enabling larger total parameter counts while keeping computational costs lower, a design choice that aligns with the resource-efficiency focus of the release.
+**「Background」** WeLM is a family of large language models developed by the WeChat AI team, first introduced in a 2022 paper \(arXiv:2209.10372\) that demonstrated strong performance on Chinese tasks, matching models up to 25 times larger. The team has since focused on resource efficiency, as highlighted in their January 2026 blog post, and has also developed WeChat-YATT, a training library for scalable RLHF pipelines. The current announcement introduces WeLM-80B, a model with 3 billion active parameters already deployed in WeChat&\#x27;s AI assistant Xiaowei, and WeLM-617B, a Mixture-of-Experts \(MoE\) model with 23 billion active parameters in development for complex tasks.
 
-**「Impact」** WeChat&\#x27;s deployment of WeLM-80B in production and the development of the 617B MoE model signal a practical shift toward resource-efficient LLMs, potentially influencing how large-scale AI is integrated into consumer platforms. This could lower the barrier for deploying advanced AI in high-traffic applications, but the impact depends on the performance and reliability of the MoE model in real-world tasks.
+**「Impact」** WeChat users will benefit from enhanced AI capabilities in Xiaowei, including more natural dialogue and seamless integration with WeChat features, while developers may gain access to advanced tools for mini-program creation once the WeLM-617B model is deployed.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.gate.com/news/detail/wechat-releases-welm-large-language-model-series-with-welm-80b-active-in-ai-23402318">WeChat Releases WeLM Large Language Model Series... | Gate News</a></li>
+<li><a href="https://welm.weixin.qq.com/en/">WeLM Blog</a></li>
+<li><a href="https://arxiv.org/abs/2508.07970">[2508.07970] WeChat-YATT: A Scalable, Simple, Efficient, and Production Ready Training Library</a></li>
+<li><a href="https://ar5iv.labs.arxiv.org/html/2209.10372">[2209.10372] WeLM: A Well-Read Pre-trained Language Model for Chinese</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM`, `#MoE`, `#WeChat`, `#AI`, `#resource-efficiency`
+**Tags**: `#LLM`, `#WeChat`, `#MoE`, `#AI`, `#NLP`
 
 ---
 
 ## Technology Blog
 
 <a id="item-tech-blog-1"></a>
-### [Day 0 Support for Qwen3.8-2.4T-A95B on vLLM](https://vllm.ai/blog/2026-08-12-qwen3.8) ⭐️ 5.0/10
+### [Day 0 vLLM Support for Qwen3.8-2.4T-A95B](https://vllm.ai/blog/2026-08-12-qwen3.8) ⭐️ 5.0/10
 
 rss · vLLM Blog · Aug 12, 00:00
 
-**「Background」** The Qwen3.8-2.4T-A95B model is a 2.4-trillion-parameter sparse Mixture-of-Experts \(MoE\) model with 512 experts, built on the Qwen 3.5 architecture. As one of the largest open-weight models released, it presents significant inference challenges due to its massive size and memory requirements.
+**「Background」** The Qwen3.8-2.4T-A95B model is a massive 2.4-trillion-parameter sparse Mixture-of-Experts \(MoE\) model with 512 experts, built on the Qwen 3.5 architecture. Running such a large model efficiently requires optimized inference support, which was previously unavailable for this model.
 
-**「Solution」** The vLLM team, in collaboration with Inferact, NVIDIA, and AMD, announced Day-0 support for Qwen3.8-2.4T-A95B, leveraging the existing Qwen 3.5 architecture to run the model out of the box. To reduce memory and bandwidth overhead, Inferact released MXFP4 and NVFP4-quantized weights that match full-precision quality, using Round-to-Nearest \(RTN\) quantization with activation calibration for 4-bit activations. Initial benchmarks show NVFP4 even outperforming FP8 on GSM8K and AIME25. Optimizations include fused kernels for linear attention, GQA, dense GEMMs, and MoE routing on NVIDIA, and AITER-fused kernels with hipBLASLt GEMMs on AMD, combining data, tensor, and expert parallelism. Deployment requires at least two NVIDIA B300 or AMD MI355X nodes, or a single node for FP4, with recommended generation parameters and a high max\_tokens for reasoning tasks.
+**「Solution」** The vLLM team, in collaboration with Inferact, NVIDIA, and AMD, announced day-0 support for Qwen3.8-2.4T-A95B on vLLM. The model reuses the Qwen 3.5 architecture, so no changes were needed. Inferact released MXFP4 and NVFP4 quantized checkpoints that match full-precision quality while reducing memory and bandwidth overhead. The team developed optimized kernels for linear attention, GQA, dense GEMMs, and MoE routing, and used a combination of data, tensor, and expert parallelism to maximize performance. Benchmarks show NVFP4 outperforms FP8 on GSM8K and AIME25, though the reasoning budget must be increased to reproduce results. Deployment requires at least two NVIDIA B300 or AMD MI355X nodes, or a single node for FP4 quantized versions.
 
-**「Takeaway」** The author concludes that Day-0 support for Qwen3.8-2.4T-A95B on vLLM is achieved through architecture reuse and collaborative kernel optimizations, with FP4 quantization offering a cost-effective path to run this massive MoE model without sacrificing accuracy.
+**「Takeaway」** The author concludes that Qwen3.8-2.4T-A95B is now accessible for efficient inference on vLLM, with flexible precision options and multi-vendor optimizations, making it a practical choice for large-scale deployment.
 
 **Tags**: `#vLLM`, `#Qwen3.8`, `#MoE`, `#FP4 quantization`, `#inference optimization`
 
@@ -427,139 +388,96 @@ rss · vLLM Blog · Aug 12, 00:00
 <a id="item-finance-news-1"></a>
 ### [CME to Launch First AI Compute Futures Contracts](https://www.cnbc.com/2026/08/11/ai-computing-power-becomes-a-tradable-asset-class-as-cme-starts-futures.html) ⭐️ 8.0/10
 
-CME Group, in partnership with Silicon Data, plans to launch the first futures contracts tied to AI computing power on Oct. 5, pending regulatory approval. These contracts will allow trading based on hourly rental prices of Nvidia&\#x27;s H100 and Blackwell B200 GPUs, with each contract representing one month&\#x27;s rent for an H100.
+CME Group plans to launch the first futures contracts for AI computing power on Oct. 5, pending regulatory approval, allowing investors and companies to trade and hedge the rental cost of Nvidia&\#x27;s H100 and Blackwell B200 GPUs. Each contract represents a month&\#x27;s rent for an H100, based on hourly rental price indexes from Silicon Data.
 
 rss · CNBC Finance · Aug 12, 14:14
 
-**「Background」** CME Group and Silicon Data first announced their partnership on May 12, 2026. Silicon Data, backed by trading firm DRW, provides the underlying rental rate indexes that the futures will track. The H100 contract targets what is currently the workhorse GPU of the AI industry.
+**「Background」** CME Group, the world&\#x27;s largest futures exchange, is partnering with data firm Silicon Data to launch the first futures contracts for AI computing power, pending regulatory approval. These contracts will be based on hourly rental prices for Nvidia&\#x27;s H100 and Blackwell B200 graphics processing units \(GPUs\), which are essential for training and running AI models. Futures contracts are financial agreements to buy or sell an asset at a set price on a future date, commonly used to hedge against price changes.
 
-**「Impact」** These futures could give AI developers and data-center operators a way to hedge their costs, while offering investors a new asset class to gain exposure to AI computing capacity without directly investing in hardware or companies.
+**「Impact」** This new asset class could affect AI developers, data-center operators, and investors by providing a benchmark for GPU pricing and a hedging tool, potentially reducing price disparities in AI computing costs.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://cryptobriefing.com/cme-group-compute-futures-launch/">CME Group launches compute futures for trading on October 5</a></li>
+<li><a href="https://www.cmegroup.com/markets/energy/power/compute-futures.html">Compute Futures - CME Group</a></li>
+<li><a href="https://www.cmegroup.com/media-room/press-releases/2026/5/12/cme_group_and_silicondatapartnertolaunchfirstcomputefutures.html">CME Group and Silicon Data Partner to Launch First Compute ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#CME`, `#AI infrastructure`, `#futures`, `#GPU pricing`, `#financial innovation`
+**Tags**: `#AI infrastructure`, `#Futures contracts`, `#Commodities`, `#CME Group`, `#GPU pricing`
 
 ---
 
 <a id="item-finance-news-2"></a>
 ### [Former Chinese Premier Zhu Rongji Dies at 98](https://www.news.cn/politics/20260812/4c2c72e299ef4561915d2e507393a81f/c.html) ⭐️ 8.0/10
 
-Former Chinese Premier Zhu Rongji died in Beijing on August 12, 2026, at the age of 98, according to an official announcement from the Communist Party and state bodies. He served as premier from 1998 to 2003, during which he implemented major economic reforms and led China&\#x27;s accession to the World Trade Organization.
+Former Chinese Premier Zhu Rongji died in Beijing on August 12, 2026, at the age of 98, according to an official announcement from the Communist Party and state bodies. He was noted for his role in economic reforms and for keeping the yuan stable during the Asian financial crisis.
 
 telegram · zaihuapd · Aug 12, 10:11
 
-**「Background」** Zhu Rongji was a key architect of China&\#x27;s economic reforms in the late 1990s and early 2000s, including fiscal, financial, and state-owned enterprise reforms, and he maintained the yuan&\#x27;s value during the Asian financial crisis.
+**「Background」** Zhu Rongji served as Premier from March 1998, during which he led major reforms in finance, state enterprises, and housing, and oversaw China&\#x27;s entry into the World Trade Organization.
 
-**「Impact」** His death is a significant historical event, but it has no direct impact on current financial markets or policies.
-
-**Tags**: `#China`, `#Zhu Rongji`, `#Obituary`, `#Economic Reform`, `#Political Event`
+**Tags**: `#China`, `#politics`, `#obituary`, `#economic reform`, `#leadership`
 
 ---
 
 <a id="item-finance-news-3"></a>
-### [Tencent Q2 Revenue Beats Expectations, Capex Surge Turns Free Cash Flow Negative](https://wallstreetcn.com/articles/3779275) ⭐️ 8.0/10
+### [Tencent Q2 Revenue Beats, Free Cash Flow Turns Negative on AI Spending](https://wallstreetcn.com/articles/3779275) ⭐️ 8.0/10
 
-Tencent&\#x27;s Q2 2026 revenue rose 11% year-over-year to 204.8 billion yuan, slightly beating Bloomberg expectations, but net profit grew only 0.7% to 56 billion yuan, missing estimates. Capital expenditure nearly tripled to 52.8 billion yuan, driving free cash flow to -13.8 billion yuan; excluding AI computing prepayments, free cash flow was 37.6 billion yuan.
+Tencent&\#x27;s Q2 2026 revenue rose 11% year-over-year to 204.8 billion yuan, slightly beating Bloomberg estimates, but net profit grew only 0.7% to 56 billion yuan, missing expectations. Capital expenditure nearly tripled to 52.8 billion yuan, driving free cash flow to -13.8 billion yuan; excluding AI computing prepayments, free cash flow was 37.6 billion yuan.
 
 telegram · zaihuapd · Aug 12, 10:30
 
-**「Background」** Tencent has been aggressively investing in AI infrastructure, which is reflected in the sharp increase in capital expenditure. The company&\#x27;s marketing services revenue led growth at 22%, while domestic games grew 17% and international games dipped 0.8% due to currency effects.
+**「Background」** Tencent is a major Chinese technology company. In the second quarter of 2026, its capital expenditure surged to 52.8 billion yuan, nearly triple the 19.1 billion yuan from the same period last year, mainly for AI infrastructure such as data centers and servers. This spending drove free cash flow to negative 13.8 billion yuan, the first time the company has reported a negative quarterly free cash flow.
 
-**「Impact」** The negative free cash flow may concern investors focused on cash generation, but the company&\#x27;s AI investments could support long-term growth in its cloud and AI services.
+**「Impact」** The surge in AI-related capital spending may pressure Tencent&\#x27;s near-term cash generation, potentially affecting shareholder returns or investment plans, while signaling continued heavy investment in AI infrastructure.
 
-**Tags**: `#Tencent`, `#earnings`, `#capital expenditure`, `#AI investment`, `#free cash flow`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://finance.sina.com.cn/jjxw/2026-08-12/doc-inimzytr4038539.shtml">腾讯上半年资本开支增长82% 二季度达到527.84亿元_新浪财经_新浪网</a></li>
+<li><a href="https://k.sina.com.cn/article_7879777297_1d5abdc1106801kuno.html?from=tech">腾讯自由现金流为何首现-138亿元？528亿资本开支砸向AI算力，管理层回应揭示三个关键细节|财报|推理|模型|基础设施|生态_新浪新闻</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#腾讯`, `#财报`, `#资本开支`, `#AI投资`, `#自由现金流`
 
 ---
 
 <a id="item-finance-news-4"></a>
-### [Premarket Stock Movers: AI Names Surge on Strong Earnings and Guidance](https://www.cnbc.com/2026/08/12/stocks-making-the-biggest-moves-premarket-crwv-smic-cohr.html) ⭐️ 7.0/10
+### [Premarket Movers: AI Stocks Surge on Strong Earnings, Software Slips](https://www.cnbc.com/2026/08/12/stocks-making-the-biggest-moves-premarket-crwv-smic-cohr.html) ⭐️ 7.0/10
 
-AI-related stocks rallied in premarket trading after several companies reported strong earnings and raised guidance. CoreWeave jumped over 18.5% after its second-quarter revenue rose 112% year over year to $2.58 billion, beating estimates, and its adjusted operating margin of 5% topped the 2.7% consensus. Super Micro Computer gained over 7.5% after issuing first-quarter adjusted earnings guidance of $1.01–$1.10 per share, well above the 76-cent consensus, and revenue guidance of $14.5–$15.5 billion, above the $11.68 billion expected. H&amp;R Block surged 11% after forecasting fiscal 2027 adjusted earnings of $6.04–$6.24 per share on revenue of $4.11–$4.16 billion, both above consensus.
+AI infrastructure stocks rallied in premarket trading after strong earnings and guidance: CoreWeave shares rose over 18.5% after reporting second-quarter revenue of $2.58 billion, up 112% year-over-year and above the LSEG consensus of $2.56 billion, while Super Micro Computer gained more than 7.5% after issuing first-quarter adjusted earnings guidance of $1.01-$1.10 per share, well above the 76-cent consensus. Meanwhile, software stocks like Workday and Salesforce fell more than 1.5%.
 
 rss · CNBC Finance · Aug 12, 12:12
 
-**「Background」** These moves follow quarterly earnings reports and forward guidance from the companies. Consensus estimates are analyst forecasts compiled by firms like LSEG and FactSet, used as benchmarks for company performance.
+**「Background」** CoreWeave is an AI cloud company that provides GPU infrastructure to AI developers and enterprises, while Super Micro Computer is a major producer of high-performance servers for data centers and AI workloads. Both companies are part of the AI infrastructure trade, which has been a key driver of market gains.
 
-**「Impact」** Investors in these companies are directly affected by the stock price movements, which reflect market reactions to the earnings and guidance. The strong performance of AI-related names contrasts with declines in some software stocks, indicating sector rotation within the tech industry.
+**「Impact」** Investors in AI-related companies may see continued volatility as the AI trade remains a key market driver, while software stocks face selling pressure.
 
-**Tags**: `#earnings`, `#guidance`, `#AI stocks`, `#premarket movers`, `#stock market`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/CoreWeave">CoreWeave - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Supermicro">Supermicro - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#earnings`, `#guidance`, `#AI infrastructure`, `#premarket movers`, `#software stocks`
 
 ---
 
 <a id="item-finance-news-5"></a>
-### [EVs Dominate China&\#x27;s Car Market: 5 Takeaways from Latest Auto Sales Data](https://www.cnbc.com/2026/08/12/china-car-sales-data-byd-tesla-geely-vw.html) ⭐️ 7.0/10
+### [EVs Dominate China&\#x27;s Car Market: Key Takeaways from Latest Sales Data](https://www.cnbc.com/2026/08/12/china-car-sales-data-byd-tesla-geely-vw.html) ⭐️ 7.0/10
 
-China&\#x27;s auto market is increasingly dominated by electric vehicles \(EVs\), which made up 65.1% of new passenger car sales in July, up from 54% a year earlier, according to the China Passenger Car Association. Geely&\#x27;s Xingyuan hatchback was the best-selling model in the six months through July with nearly 197,500 units sold, while Tesla&\#x27;s Model Y ranked second with over 180,000 units.
+Electric vehicles now dominate China&\#x27;s car market, with new energy vehicles \(battery and hybrid\) making up 65.1% of new passenger car sales in July, up from 54% a year earlier, according to the China Passenger Car Association. Geely&\#x27;s Xingyuan electric hatchback was the best-selling model with nearly 197,500 units sold in the six months through July, while BYD&\#x27;s passenger car sales dropped by more than 10% in the first half of the year.
 
 rss · CNBC Finance · Aug 12, 01:20
 
-**「Background」** China&\#x27;s auto market has been shifting rapidly toward electric vehicles \(EVs\), with new energy vehicles \(battery and hybrid cars\) making up 65.1% of new passenger car sales in July, up from 54% a year earlier. This shift has intensified competition among automakers, with domestic brands like Geely and BYD gaining ground, while traditional foreign brands like Volkswagen have struggled to maintain their market share.
+**「Background」** China&\#x27;s car market is highly competitive, with a rapid shift toward electric vehicles. Geely, a Hangzhou-based automaker, ranks second overall in China sales for 2025, while BYD, the largest EV maker, has seen a decline in sales. Tesla&\#x27;s Model Y remains popular despite a higher price, and Volkswagen is the only traditional foreign brand in the top 10.
 
-**「Impact」** The shift toward EVs is reshaping competition, with traditional foreign brands like Volkswagen holding only a small presence, while domestic players like Geely and BYD lead the market.
+**「Impact」** The rise of EVs and the decline in overall passenger car sales \(down 20.3% year-to-date through July\) could pressure automakers to innovate and adjust pricing, affecting both domestic and foreign brands competing in China&\#x27;s market.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.linkedin.com/posts/jean-pierre-palomba-marin-14508b162_geely-wuling-surpass-tesla-byd-in-china-activity-7432325214094557184-0AaQ">Geely , Wuling surpass Tesla , BYD in China EV sales | Jean-Pierre...</a></li>
-<li><a href="https://chinaevhome.com/2026/08/12/xiaomi-su7-ranks-2-in-china-july-ev-sedan-top-10-as-highest-priced-model/">Xiaomi SU7 Ranks #2 in China July EV Sedan Top 10... | ChinaEVHome</a></li>
-<li><a href="https://carnewschina.com/2026/08/11/china-july-model-sales-rank-geely-xingyuan-1st-leapmotor-a10-2nd-tesla-model-y-3rd/">China July model sales rank: Geely Xingyuan 1st, Leapmotor A10 2nd...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#China auto market`, `#EV sales`, `#Geely`, `#Tesla`, `#BYD`
-
----
-
-<a id="item-finance-news-6"></a>
-### [Nvidia&\#x27;s $500 Billion AI Financing Plan Faces China Risk](https://www.cnbc.com/2026/08/11/nvidia-ai-funding-jensen-huang-china-risk.html) ⭐️ 7.0/10
-
-Nvidia announced a $500 billion financing pipeline with six major asset managers to fund AI data centers and GPU clusters, but analysts warn that a potential Chinese chip oversupply could erode GPU collateral values faster than expected, posing a key risk to the plan.
-
-rss · CNBC Finance · Aug 11, 21:01
-
-**「Background」** Nvidia has announced partnerships with six major asset managers to create financing platforms that aim to mobilize over $500 billion for AI infrastructure. The plan treats Nvidia&\#x27;s GPUs as collateral that retains value over time, similar to traditional assets like real estate. However, analysts warn that rapid depreciation of GPUs, potentially accelerated by a Chinese chip oversupply, could undermine the value of that collateral.
-
-**「Impact」** If Chinese chip production triggers a price war, investors in these asset-backed loans could face losses as collateral values fall, and borrowers—likely non-investment grade AI startups—may struggle to refinance.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital">NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms to Mobilize Over $500 Billion of Third-Party Capital | NVIDIA Newsroom</a></li>
-<li><a href="https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html">Nvidia lines up $500 billion in financing as CEO Jensen Huang tells CNBC his chips are ‘investable asset’</a></li>
-<li><a href="https://www.bloomberg.com/news/articles/2026-08-10/nvidia-to-team-with-wall-street-on-500-billion-package-ft-says">Nvidia Taps Wall Street for $500 Billion Funding Commitment - Bloomberg</a></li>
-<li><a href="https://spectrum.ieee.org/china-ai-chip">China&#x27;s AI Chip Race: Tech Giants Challenge Nvidia - IEEE ...</a></li>
-<li><a href="https://techjournal.org/us-imposes-25-tariff-on-nvidia-h200-ai-chips-bound-for-china">US-China AI Chip War 2026: Nvidia, Tariffs &amp; the H200</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Nvidia`, `#AI infrastructure`, `#asset-backed finance`, `#China risk`, `#GPU market`
-
----
-
-<a id="item-finance-news-7"></a>
-### [Election Betting Bans and Prediction Markets: A State-by-State Legal Patchwork](https://www.cnbc.com/2026/08/11/do-state-election-betting-bans-apply-to-prediction-markets.html) ⭐️ 7.0/10
-
-As the midterms approach, states are uncertain whether their election betting bans apply to prediction markets, with Wisconsin and Colorado taking firm stances and platforms like Kalshi and Polymarket facing legal challenges.
-
-rss · CNBC Finance · Aug 11, 18:44
-
-**「Background」** Prediction markets are platforms where people trade contracts whose payouts depend on the outcome of future events, such as elections. The Commodity Futures Trading Commission \(CFTC\), a U.S. federal agency, considers these contracts to be swaps and claims exclusive authority to regulate them, which would override state laws. However, states argue that their constitutional power to manage elections gives them the right to ban betting on them. This dispute has led to legal battles, with some states like Wisconsin and Colorado enforcing their bans, while others are uncertain how their laws apply to these platforms.
-
-**「Impact」** Users of prediction markets in states with strict bans could face penalties including fines, jail time, or loss of voting rights, while platforms may be forced to restrict access in certain states.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.cftc.gov/PressRoom/PressReleases/9183-26">CFTC Reaffirms Exclusive Jurisdiction over Prediction Markets ...</a></li>
-<li><a href="https://www.cftc.gov/LearnandProtect/PredictionMarkets">Understanding Prediction Markets and Event Contracts | CFTC</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#prediction markets`, `#election betting`, `#state regulation`, `#legal uncertainty`, `#midterms`
+**Tags**: `#China auto market`, `#EV sales`, `#Geely`, `#BYD`, `#Tesla`
 
 ---
